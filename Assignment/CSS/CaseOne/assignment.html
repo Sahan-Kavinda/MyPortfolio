@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/normalize.css">
+    <link href="assets/normalize.css" rel="stylesheet">
     <style>
-        #red>.box{
+        #red > .box {
             position: relative;
-            width:50%;
-            height:50dvh;
+            width: 50%;
+            height: 50dvh;
             background-color: red;
         }
-        #red>.box>.cricle{
+
+        #red > .box > .cricle {
             position: absolute;
             background-color: white;
             width: 200px;
@@ -25,7 +26,8 @@
             bottom: 0;
             margin: auto;
         }
-        #red>.box>.cricle>.squer{
+
+        #red > .box > .cricle > .squer {
             position: absolute;
             background-color: rgb(248, 6, 6);
             width: 100px;
@@ -36,16 +38,18 @@
             bottom: 0;
             margin: auto;
         }
+
         /* green */
-           #green>.box{
+        #green > .box {
             position: relative;
-            width:50%;
-            height:50dvh;
+            width: 50%;
+            height: 50dvh;
             background-color: green;
             left: 0px;
             bottom: 0px;
         }
-        #green>.box>.cricle{
+
+        #green > .box > .cricle {
             position: absolute;
             background-color: white;
             width: 200px;
@@ -57,7 +61,8 @@
             bottom: 0;
             margin: auto;
         }
-        #green>.box>.cricle>.squer{
+
+        #green > .box > .cricle > .squer {
             position: absolute;
             background-color: rgb(248, 6, 6);
             width: 100px;
@@ -70,15 +75,16 @@
         }
 
         /* yellow */
-           #yellow>.box{
+        #yellow > .box {
             position: absolute;
-            width:50%;
-            height:50dvh;
+            width: 50%;
+            height: 50dvh;
             background-color: yellow;
             right: 0px;
             top: 0px;
         }
-        #yellow>.box>.cricle{
+
+        #yellow > .box > .cricle {
             position: absolute;
             background-color: white;
             width: 200px;
@@ -90,7 +96,8 @@
             bottom: 0;
             margin: auto;
         }
-        #yellow>.box>.cricle>.squer{
+
+        #yellow > .box > .cricle > .squer {
             position: absolute;
             background-color: rgb(248, 6, 6);
             width: 100px;
@@ -102,16 +109,17 @@
             margin: auto;
         }
 
-                /* blue */
-           #blue>.box{
+        /* blue */
+        #blue > .box {
             position: absolute;
-            width:50%;
-            height:50dvh;
+            width: 50%;
+            height: 50dvh;
             background-color: blue;
             right: 0px;
             bottom: 0px;
         }
-        #blue>.box>.cricle{
+
+        #blue > .box > .cricle {
             position: absolute;
             background-color: white;
             width: 200px;
@@ -123,7 +131,8 @@
             bottom: 0;
             margin: auto;
         }
-        #blue>.box>.cricle>.squer{
+
+        #blue > .box > .cricle > .squer {
             position: absolute;
             background-color: rgb(248, 6, 6);
             width: 100px;
@@ -134,7 +143,8 @@
             bottom: 0;
             margin: auto;
         }
-        #CS{
+
+        #CS {
             background-color: white;
             position: absolute;
             width: 180px;
@@ -145,8 +155,9 @@
             top: 0px;
             margin: auto;
         }
-        .Ccircle{
-             position: absolute;
+
+        .Ccircle {
+            position: absolute;
             background-color: red;
             width: 120px;
             height: 120px;
@@ -158,89 +169,95 @@
             margin: auto;
 
         }
-      .quarter-circle01 {
-        position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 0 0 0 100px;
-  background-color: rgb(255, 255, 255);
-  left: 0;
-   top: 0;
-   transform: rotate(270deg);
-}
- .quarter-circle02 {
-        position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 0 0 0 100px;
-  background-color: rgb(255, 255, 255);
-  right: 0;
-   top: 0;
-   transform: rotate(0deg);
-}
- .quarter-circle03 {
-        position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 0 0 0 100px;
-  background-color: rgb(255, 255, 255);
-  right: 0;
-   bottom: 0;
-   transform: rotate(90deg);
-}
-.quarter-circle04 {
-        position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 0 0 0 100px;
-  background-color: rgb(255, 255, 255);
-  left: 0;
-   bottom: 0;
-   transform: rotate(180deg);
-}
-.quarter-circle05 {
-        position: absolute;
-  width: 200px;
-  height: 100px;
-  border-radius: 0 0 100px 100px;
-  background-color: rgb(255, 255, 255);
-  left: 0;
-  right: 0;
-   bottom: 0;
-   margin: auto;
-   transform: rotate(180deg);
-}
-.quarter-circle06 {
-        position: absolute;
-  width: 200px;
-  height: 100px;
-  border-radius: 0 0 100px 100px;
-  background-color: rgb(255, 255, 255);
-  left: 0;
-  right: 0;
-   top: 0;
-   margin: auto;
-   transform: rotate(0deg);
-}
+
+        .quarter-circle01 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100px;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            top: 0;
+            transform: rotate(270deg);
+        }
+
+        .quarter-circle02 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100px;
+            background-color: rgb(255, 255, 255);
+            right: 0;
+            top: 0;
+            transform: rotate(0deg);
+        }
+
+        .quarter-circle03 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100px;
+            background-color: rgb(255, 255, 255);
+            right: 0;
+            bottom: 0;
+            transform: rotate(90deg);
+        }
+
+        .quarter-circle04 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100px;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            bottom: 0;
+            transform: rotate(180deg);
+        }
+
+        .quarter-circle05 {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border-radius: 0 0 100px 100px;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: rotate(180deg);
+        }
+
+        .quarter-circle06 {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border-radius: 0 0 100px 100px;
+            background-color: rgb(255, 255, 255);
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            transform: rotate(0deg);
+        }
 
     </style>
 </head>
 <body>
-    <section id="red">
+<section id="red">
     <div class="box">
         <div class="cricle">
             <div class="squer"></div>
         </div>
     </div>
-    </section>
+</section>
 
-    <section id="green">
+<section id="green">
     <div class="box">
         <div class="cricle">
             <div class="squer"></div>
         </div>
     </div>
-    </section>
+</section>
 
 <section id="yellow">
     <div class="box">
@@ -248,31 +265,27 @@
             <div class="squer"></div>
         </div>
     </div>
-    </section>
+</section>
 
-    <section id="blue">
+<section id="blue">
     <div class="box">
         <div class="cricle">
             <div class="squer"></div>
         </div>
     </div>
-    </section>
-    <!-- center section -->
-    <section id="CS">
-         <div class="Ccircle">
-           
+</section>
+<!-- center section -->
+<section id="CS">
+    <div class="Ccircle">
+
     </div>
-    </section>
-  <div class="quarter-circle01"></div>
-  <div class="quarter-circle02"></div>
-  <div class="quarter-circle03"></div>
-  <div class="quarter-circle04"></div>
-  <div class="quarter-circle05"></div>
-  <div class="quarter-circle06"></div>
- 
-
-
-
+</section>
+<div class="quarter-circle01"></div>
+<div class="quarter-circle02"></div>
+<div class="quarter-circle03"></div>
+<div class="quarter-circle04"></div>
+<div class="quarter-circle05"></div>
+<div class="quarter-circle06"></div>
 
 
 </body>
