@@ -47,11 +47,13 @@
         display: inline-block;
       }
       footer {
+        display: flex;
         background-color: darkgray;
         width: 100%;
         height: 50px;
-        text-align: center;
-        bottom: 0px;
+        align-items: center;
+        justify-content: center;
+        /* bottom: 0px; */
       }
       body > main {
         position: relative;
@@ -66,27 +68,34 @@
       }
       .imgdiv {
         position: relative;
-        height: 260px;
+        height: 400px;
         margin-left: 200px;
         margin-right: 20px;
         margin-top: 85px;
+        display: flex;
+        border: 1px solid;
+        justify-content:center;
+        
+        
+        
+        
+        
       }
-      .imgdiv > div > img {
+      /* .imgdiv > div{
         left: 0;
         right: 0;
         margin: auto;
         position: absolute;
-      }
-      .imgdiv > div:nth-child(1) {
-        position: absolute;
-
-        width: 33%;
-        height: 200px;
-        right: 0;
+      } */
+      .imgdiv > div>img{
+        /* position: absolute; */
+        height: 400px;
+        /* width: 33%; */
+        /* right: 0;
         left: 0;
-        margin: auto;
+        margin: auto; */
       }
-      .imgdiv > div:nth-child(2) {
+      /* .imgdiv > div:nth-child(2) {
         position: absolute;
 
         width: 33%;
@@ -104,7 +113,7 @@
         bottom: 0;
         right: 0;
         left: 0;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -175,7 +184,7 @@
           distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
           nostrum recusandae aliquid. Eius, ea? Maiores.
         </p>
-         <p>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
           sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
           praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
@@ -208,7 +217,7 @@
           distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
           nostrum recusandae aliquid. Eius, ea? Maiores.
         </p>
-         <p>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
           sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
           praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
@@ -241,7 +250,7 @@
           distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
           nostrum recusandae aliquid. Eius, ea? Maiores.
         </p>
-         <p>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
           sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
           praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
