@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <title>Case_one</title>
+    <style>
+      section {
+        height: 600px;
+        width: 230px;
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Arial;
+        right: 178px;
+      }
+     section div:nth-child(1){
+    background-color: red;
+     }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        position: relative;
+        height: 50px;
+        background-color: rgb(28, 0, 128);
+        box-shadow: 3px 6px 5px 1px black;
+        cursor: pointer;
+        transition: all 2s;
+      }
+      section > div:hover {
+        transition: all 2s;
+        left: 178px;
+      }
+      h6{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div><h6>user_name</h6>
+      <img src="" alt=""></div>
+      <div><h6>Address</h6></div>
+      <div><h6>contact</h6></div>
+      <div><h6>salary</h6></div>
+      <div><h6>email</h6></div>
+    </section>
+  </body>
+</html>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
     <title>Case_two</title>
     <style>
+    
       header {
         width: 100%;
         height: 80px;
@@ -19,7 +20,7 @@
       .logo > img {
         position: relative;
         left: 5px;
-        width: 200px;
+
         height: 80px;
       }
       nav {
@@ -38,6 +39,7 @@
         width: 150px;
         bottom: 0;
         top: 0;
+        left: 0;
       }
 
       main {
@@ -53,7 +55,7 @@
         height: 50px;
         align-items: center;
         justify-content: center;
-        /* bottom: 0px; */
+        
       }
       body > main {
         position: relative;
@@ -67,53 +69,12 @@
         display: inline-flex;
       }
       .imgdiv {
-        position: relative;
-        height: 400px;
-        margin-left: 200px;
-        margin-right: 20px;
-        margin-top: 85px;
-        display: flex;
-        border: 1px solid;
-        justify-content:center;
-        
-        
-        
-        
-        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid;
+        width: 75%;
+        height: 300px;
       }
-      /* .imgdiv > div{
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-      } */
-      .imgdiv > div>img{
-        /* position: absolute; */
-        height: 400px;
-        /* width: 33%; */
-        /* right: 0;
-        left: 0;
-        margin: auto; */
-      }
-      /* .imgdiv > div:nth-child(2) {
-        position: absolute;
-
-        width: 33%;
-        height: 200px;
-        top: 0;
-        bottom: 0;
-        right: 0;
-      }
-      .imgdiv > div:nth-child(3) {
-        position: absolute;
-
-        width: 33%;
-        height: 200px;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-      } */
     </style>
   </head>
   <body>
@@ -130,7 +91,11 @@
         </ul>
       </nav>
     </header>
-    <main>
+    
+    <section class="imgdiv">
+       
+      </section>
+    
       <!-- side menu -->
 
       <div class="side_menu">
@@ -142,13 +107,7 @@
         </ul>
       </div>
 
-      <section class="imgdiv">
-        <div>
-          <img src="flower-5201_256.gif" alt="gif" />
-        </div>
-        <div><img src="flower-5201_256.gif" alt="gif" /></div>
-        <div><img src="flower-5201_256.gif" alt="gif" /></div>
-      </section>
+      
 
       <section class="pg">
         <p>

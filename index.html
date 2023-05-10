@@ -2,56 +2,112 @@
 <html>
   <head>
     <title>SKS_one</title>
-    <link rel="icon" href="assets/images/S-logo.png" type="image/png" />
+    <link href="assets/images/S-logo.png" rel="icon" type="image/png" />
     <meta charset="UTF-8" />
-    <meta name="KeyWords" content="sahan,senanayaka" />
+    <meta content="sahan,senanayaka" name="KeyWords" />
     <meta
-      name="description"
       content="SKS_One is the personal website of Sahan Kavinda Senanayake, a web designer, photographer, front-end developer, and UI/UX designer. Explore Sahan's interests and passions through his portfolio of stunning photography, web design projects, and UI/UX design work. From elegant and intuitive user interfaces to visually captivating websites, Sahan's work is a testament to his creativity and skill."
+      name="description"
     />
-    <meta name="autor" content="Sahan" />
-    <meta name="owner" content="Sahan Kavinda" />
-    <meta name="robots" content="index" />
-    <meta name="theme-color" content="black" />
+    <meta content="Sahan" name="autor" />
+    <meta content="Sahan Kavinda" name="owner" />
+    <meta content="index" name="robots" />
+    <meta content="black" name="theme-color" />
     <meta
-      name="viewport"
       content="width=device-width initial-scale=10 user-scalable=no"
+      name="viewport"
     />
     <meta
-      name="viewport"
       content="width=device-width initial-scale=10 minimum-scale=2 maximum-scale=4"
+      name="viewport"
     />
+    <link rel="stylesheet" href="normalize.css" />
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        padding: 0px 72px 0px 72px;
+        /* flex-wrap: wrap; */
+      }
+      * {
+        color: rgb(0, 255, 47);
+      }
+      section {
+        border: 3px solid blue;
+      }
+      header {
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+      }
+      .logoring {
+        margin: 16px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85px;
+        height: 85px;
+        background-color: rgb(246, 4, 4);
+        border-radius: 100px;
+      }
+      .logo {
+        width: 76px;
+        height: 76px;
+        background: url(assets/images/logo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 100px;
+      }
+      nav {
+        border: 1px solid red;
+        margin-left: 70px;
+      }
+      .navlink{
+        height: 32px;
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        border: 1px solid;
+        /* list-style: none; */
+      }
+      .navlink li {
+        border: 1px solid ;
+        display: inline-block;
+        /* margin-left: 20px; */
+      }
+      .navlink li a {
+        text-decoration: none;
+        /* margin:0px; */
+      }
+      a:hover {
+        color: white;
+      }
+    </style>
   </head>
-  <body>
-    <!-- menu bar -->
-    <header>
-      <nav>
-        <a href="home">Home</a>
-        <a href="about">About</a>
-        <a href="skills">Skills</a>
-        <a href="project">Project</a>
-        <a href="contect">Contact</a>
-        <a href="social_media">Social media</a>
-        <a href="privacy_policy">Privacy policy</a>
-      </nav>
-    </header>
-    <main>
-      <!-- home page section-->
-      <section>
-        <aside>
-          <!-- logo aside -->
-          <img src="assets/images/logo.png" alt="logo" class="logo" />
-        </aside>
 
-        <aside>
-          <!-- profile PIC aside -->
-          <img
-            src="assets/images/home.jpg"
-            alt="profilepic"
-            class="profilePIC"
-          />
-        </aside>
-        <!-- short welcome and about -->
+  <body>
+    <section class="homepage">
+      <header>
+        <div class="logoring">
+          <div class="logo"></div>
+        </div>
+        <nav>
+          <ul class="navlink">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Me</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="porject">Project</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="privacy policy">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="runningwordbox">
+        <h1 class="runningword">hi there,I'm Sahan,</h1>
+      </div>
+      <div class="profilelogo">logo</div>
+
+      <div class="welcomeword">
         <p class="welcome">
           SKS_ONE is the digital home of Sahan Kavinda, a multi-talented
           creative professional who specializes in software development,
@@ -59,47 +115,209 @@
           for examples of beautiful, functional work, and contact Sahan Kavinda
           to bring your vision to life. Thank you for visiting SKS_ONE!
         </p>
-      </section>
+      </div>
+      <div class="Hsocial">
+        <div class="logo1"></div>
+        <div class="logo2"></div>
+        <div class="logo3"></div>
+        <div class="logo4"></div>
+        <div class="logo5"></div>
+        <div class="logo6"></div>
+      </div>
+    </section>
 
-      <!-- about page section -->
-      <section>
-        <!--about potos -->
-        <section class="abut">
-          <div>
-            <p>
-              Hello, I'm Sahan Kavinda Senanayka, a 22-year-old software
-              developer from Sri Lanka. I currently reside at Kanda Road,
-              Madakumbura, Karandeniya.
-            </p>
-            <p>
-              I attended G/Karandeniya Central College for my education. In
-              terms of programming languages, I have experience in Java, HTML,
-              CSS, Javascript, and MY SQL. I'm particularly interested in
-              front-end development and have a passion for design using Figma. I
-              am also currently learning new skills and techniques at IJSE to
-              further improve my development abilities.
-            </p>
-            <p>
-              When I'm not coding or learning new programming languages, I enjoy
-              exploring new places and cultures through travel. I find that
-              seeing new sights and meeting new people inspires me to be more
-              creative and innovative in my work. Additionally, I am an avid
-              swimmer and enjoy spending time in the water to stay active and
-              energized.
-            </p>
-          </div>
-        </section>
-      </section>
-      <!-- about page -->
-      <section></section>
+    <!-- about page section -->
+    <section class="abut">
+      <div class="aboutimg">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
+        <div class="item9"></div>
+        <div class="item10"></div>
+        <div class="item11"></div>
+        <div class="item12"></div>
+      </div>
+      <div>
+        <h1>About Me</h1>
+        <p>
+          Hello, I'm Sahan Kavinda Senanayka, a 22-year-old software developer
+          from Sri Lanka. I currently reside at Kanda Road, Madakumbura,
+          Karandeniya.
+        </p>
+        <p>
+          I attended G/Karandeniya Central College for my education. In terms of
+          programming languages, I have experience in Java, HTML, CSS,
+          Javascript, and MY SQL. I'm particularly interested in front-end
+          development and have a passion for design using Figma. I am also
+          currently learning new skills and techniques at IJSE to further
+          improve my development abilities.
+        </p>
+        <p>
+          When I'm not coding or learning new programming languages, I enjoy
+          exploring new places and cultures through travel. I find that seeing
+          new sights and meeting new people inspires me to be more creative and
+          innovative in my work. Additionally, I am an avid swimmer and enjoy
+          spending time in the water to stay active and energized.
+        </p>
+      </div>
+    </section>
+    <!-- skills page   -->
+    <section>
+      <div class="skilltool">
+        <div class="skill_ring"></div>
+        <div class="tool1"></div>
+        <div class="tool2"></div>
+        <div class="tool3"></div>
+        <div class="tool4"></div>
+        <div class="tool5"></div>
+        <div class="tool6"></div>
+        <div class="tool7"></div>
+        <div class="tool8"></div>
+        <div class="tool9"></div>
+        <h1 class="watermark">Skill</h1>
+      </div>
+      <div class="skillparagraph">
+        <h1>Skills</h1>
+        <p>Programming Languages: Java, HTML, CSS, JavaScript, MY SQL</p>
+        <p>
+          Front-End Development: As someone who is personally interested in
+          front-end development, I have a passion for designing user interfaces
+          and experiences using tools such as Figma.
+        </p>
+        <p>
+          Software Development: With experience in various programming
+          languages, I am skilled in software development and enjoy taking on
+          challenging projects that require creative solutions.
+        </p>
+        <p>
+          Photography, 3D Animation, and Video Editing: As hobbies, I have
+          developed skills in photography, 3D animation, and video editing.
+          These skills have helped me to hone my creativity and eye for detail,
+          which I apply to my software development work.
+        </p>
+      </div>
+    </section>
+    <!-- project page -->
+    <section class="project_page">
+      <div class="projecticon">
+        <div class="PI1"></div>
+        <div class="PI2"></div>
+        <div class="PI3"></div>
+      </div>
+      <div class="projectword">
+        <div class="p_ring">
+          <h1>Project</h1>
+          <p>
+            Here you can explore a collection of my design projects created with
+            Figma, including UI/UX designs, logos, and branding materials. Feel
+            free to take a look and get in touch if you have any questions or
+            comments.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- contact me page -->
+    <section class="contactMe">
+      <contactBox>
+        <h1>Contact Me</h1>
+        <p>Thank you for visiting my website!</p>
+        <p>
+          If you have any questions, comments, or business inquiries, please
+          feel free to reach out to me using the contact information provided
+          below. You can contact me directly at my phone number 0783390497 or
+          email me at sahankavinda@gmail.com.
+        </p>
+        <p>
+          I'm always happy to connect with new people and explore potential
+          collaborations, so don't hesitate to get in touch.
+        </p>
+        <p>
+          I'll do my best to respond to your message as soon as possible.
+          Looking forward to hearing from you!
+        </p>
+        <div class="contactSocial">
+          <div class="contactScocialIcon"></div>
+          <div class="contactScocialIcon"></div>
+          <div class="contactScocialIcon"></div>
+          <div class="contactScocialIcon"></div>
+          <div class="contactScocialIcon"></div>
+          <div class="contactScocialIcon"></div>
+        </div>
+      </contactBox>
+    </section>
+    <!-- privacy policy page -->
+    <section class="privacy">
+      <h1>Privacy Policy</h1>
+      <p>Effective Date: [2023/12/31]</p>
       <p>
-        <dfn id="services"> Services</dfn> ===================================
+        We at SahanSenanayaka0001.com respect your privacy and are committed to
+        protecting your personal data. This Privacy Policy describes how we
+        collect, use, and protect the personal data that you provide to us
+        through your use of our website. By visiting our website, you accept and
+        consent to the practices described in this Privacy Policy.
       </p>
-      <section></section>
-      <section></section>
-      <section></section>
 
-      <img src="" />
-    </main>
+      <p>Information We Collect</p>
+      <p>
+        We may collect personal data such as your name, email address, and other
+        contact information when you use our website. We may also collect
+        non-personal data such as your IP address, browser type, and other
+        technical information to improve the functionality of our website.
+      </p>
+      <p>How We Use Your Information</p>
+      <p>
+        We use your personal data to communicate with you, provide you with
+        information or services that you have requested, and to improve your
+        user experience on our website. We may also use your personal data for
+        marketing purposes, such as sending you newsletters or promotional
+        emails, but only if you have provided your explicit consent. We may
+        share your personal data with third-party service providers who assist
+        us in delivering our services, such as web hosting or analytics
+        services. These providers are obligated to protect your personal data
+        and use it only for the purpose of providing their services to us.
+      </p>
+      <p>Cookies</p>
+      <p>
+        We may use cookies to improve your user experience and to provide us
+        with information about how our website is being used. Cookies are small
+        files that are stored on your device and are used to track your activity
+        on our website. You can choose to disable cookies in your browser
+        settings if you prefer.
+      </p>
+      <p>Security</p>
+      <p>
+        We take the security of your personal data seriously and implement
+        reasonable measures to protect it from unauthorized access, disclosure,
+        or misuse. However, please note that no security measures are completely
+        foolproof, and we cannot guarantee the security of your personal data.
+      </p>
+      <p>Your Rights</p>
+      <p>
+        You have the right to access, modify, or delete your personal data at
+        any time. You may also withdraw your consent to our use of your personal
+        data for marketing purposes by contacting us using the information
+        below.
+      </p>
+      <p>Changes to This Privacy Policy</p>
+      <p>
+        We reserve the right to update or change this Privacy Policy at any
+        time. We will notify you of any changes by posting the new Privacy
+        Policy on this page. Your continued use of our website after any changes
+        to this Privacy Policy indicates your acceptance of the changes.
+      </p>
+      <p>Contact Us</p>
+      <p>
+        If you have any questions or concerns about this Privacy Policy or the
+        handling of your personal data, please
+      </p>
+    </section>
+    <footer>
+      Copyright © 2023 SKS One by Sahan Kavinda. All Rights Reserved.
+    </footer>
   </body>
 </html>
