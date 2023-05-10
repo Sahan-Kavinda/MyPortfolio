@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <title>case_six</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      section {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: url("Car_Animation_Img/city.png");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+      }
+
+      .car {
+        height: 150px;
+        width: 320px;
+        bottom: 18%;
+        position: fixed;
+        margin-left: 400px;
+      }
+
+      .wheel1 {
+        position: fixed;
+        width: 65px;
+        height: 65px;
+        bottom: 20%;
+        margin-left: 422px;
+        animation: rotate 20s infinite;
+      }
+
+      .wheel2 {
+        position: fixed;
+        width: 65px;
+        height: 65px;
+        bottom: 20%;
+        margin-left: 620px;
+        animation: rotate 20s infinite;
+      }
+
+      .road {
+        position: absolute;
+        width: 300vw;
+        height: 30%;
+        bottom: 0;
+        margin-left: 0;
+        animation: moving 20s infinite;
+      }
+
+      .city {
+        position: absolute;
+        width: 300vw;
+        height: 60%;
+        bottom: 30%;
+        margin-left: 0;
+        animation: moving 20s infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(720deg);
+        }
+        100% {
+          transform: rotate(540deg);
+        }
+      }
+
+      @keyframes moving {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-2000px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img class="sky" src="Car_Animation_Img/sky.jpg" />
+      <img class="city" src="Car_Animation_Img/city.png" />
+      <img class="road" src="Car_Animation_Img/road.jpg" />
+      <img class="car" src="Car_Animation_Img/car.png" />
+      <img class="wheel1" src="Car_Animation_Img/wheel.png" />
+      <img class="wheel2" src="Car_Animation_Img/wheel.png" />
+    </section>
+  </body>
+</html>

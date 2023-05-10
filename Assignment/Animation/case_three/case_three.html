@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=""> -->
+    <title>case_three</title>
+    <style>
+body{
+    padding: 10px;
+}
+        .container {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            animation-name: box-animation;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes box-animation {
+            0% {
+                background-color: blue;
+                margin: 0;
+
+            }
+
+            25% {
+
+                background-color: yellow;
+                margin: 0 0 0 1300px;
+                transform: rotate(90deg);
+            }
+
+            50% {
+
+                background-color: red;
+                margin: 550px 0 0 1300px;
+                transform: rotate(180deg);
+            }
+
+            75% {
+
+                background-color: deeppink;
+                margin: 550px 0 0 0;
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background-color: rgb(0, 255, 81);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>    
+<div class="container"></div>
+</body>
+</html>
