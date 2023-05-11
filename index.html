@@ -22,19 +22,31 @@
       name="viewport"
     />
     <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans?preview.size=26&query=Josefin+Sans"> -->
     <style>
       body {
         background-color: rgb(0, 0, 0);
         padding: 0px 72px 0px 72px;
-        /* flex-wrap: wrap; */
       }
       * {
         color: rgb(0, 255, 47);
       }
       section {
+        position: relative;
+        height: 717px;
+        left: 0px;
+
+        border-radius: 0px;
         border: 3px solid blue;
       }
-      header {
+      .homepage {
+        top: 0px;
+      }
+      .header {
         border: 1px solid;
         display: flex;
         align-items: center;
@@ -61,33 +73,121 @@
         border: 1px solid red;
         margin-left: 70px;
       }
-      .navlink{
+      .navlink {
+        padding: 0;
         height: 32px;
-        width: 1000px;
+        width: 900px;
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         border: 1px solid;
-        /* list-style: none; */
       }
       .navlink li {
-        border: 1px solid ;
+        border: 1px solid;
         display: inline-block;
-        /* margin-left: 20px; */
+        list-style: none;
       }
       .navlink li a {
+        font-size: larger;
+        /* font-weight:st; */
+        /* font-style: italic; */
+        font-family: Josefin Sans;
         text-decoration: none;
-        /* margin:0px; */
       }
       a:hover {
         color: white;
+        font-weight: bold;
       }
+      .welcomeword p {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid; */
+        margin: 0.5em;
+        font-size: 1em;
+      }
+
+      .welcomeword {
+        position: absolute;
+        width: 700px;
+        left: 15px;
+        top: 430px;
+        border: 1px solid;
+      }
+      .profilelogo_ring {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 100%;
+        width: 500px;
+        height: 500px;
+        right: 0;
+        border: 10px solid;
+        margin: 10px;
+      }
+      .profilelogo {
+        position: absolute;
+        border-radius: 100%;
+        width: 450px;
+        height: 450px;
+        /* right: 0; */
+        border: 1px solid;
+      }
+      footer {
+        border: 2px solid yellow;
+      }
+      .head_line_box {
+        position: absolute;
+        left: 0;
+        top: 150px;
+        border: 1px solid red;
+        width: 800px;
+        height: 130px;
+      }
+      .hi_box {
+        position: absolute;
+        border: 1px solid;
+        width: 20%;
+      }
+      .move_box {
+        position: absolute;
+        border: 1px solid;
+        width: 50%;
+        right: 20%;
+      }
+
+      .Hsocial {
+        position: absolute;
+        bottom: 15px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+        width: 274px;
+
+        position: absolute;
+      }
+      .Hsocial div {
+        border: 1px solid red;
+        height: 39px;
+        width: 39px;
+        border-radius: 100%;
+        
+      }
+      .Hsocial .logo1 {
+        background: url(assets/images/social/facebook.png);
+        background-size: cover;
+        background-position: center;
+         background-color: white;
+       
+      }
+      
     </style>
   </head>
 
   <body>
     <section class="homepage">
-      <header>
+      <div class="header">
         <div class="logoring">
           <div class="logo"></div>
         </div>
@@ -101,24 +201,45 @@
             <li><a href="privacy policy">Privacy Policy</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="runningwordbox">
-        <h1 class="runningword">hi there,I'm Sahan,</h1>
       </div>
-      <div class="profilelogo">logo</div>
+
+      <div class="head_line_box">
+        <div class="hi_box">
+          <h2>
+            hi there, <br />
+            i'm <span>Sahan,</span>
+          </h2>
+        </div>
+        <div class="move_box">
+          <h1>Software devaloper</h1>
+          <br />
+          <!-- <h1>and</h1> -->
+          <!-- <br><h1>Digital creater</h1> -->
+        </div>
+      </div>
+      <div class="profilelogo_ring">
+        <div class="profilelogo"></div>
+      </div>
 
       <div class="welcomeword">
-        <p class="welcome">
-          SKS_ONE is the digital home of Sahan Kavinda, a multi-talented
-          creative professional who specializes in software development,
-          photography, video editing, and UI/UX design. Explore the portfolio
-          for examples of beautiful, functional work, and contact Sahan Kavinda
-          to bring your vision to life. Thank you for visiting SKS_ONE!
+        <p>SKS_ONE is the digital home of Sahan Kavinda,</p>
+        <p>
+          a multi-talented creative professional who specializes in software
+          development,
         </p>
+        <p>photography, video editing, and UI/UX design.</p>
+        <p>
+          Explore the portfolio for examples of beautiful, functional work, and
+          contact Sahan Kavinda to bring
+        </p>
+        <p>your vision to life.</p>
+        <p>Thank you for visiting SKS_ONE!</p>
       </div>
       <div class="Hsocial">
-        <div class="logo1"></div>
-        <div class="logo2"></div>
+        <div class="logo1 back" >
+          <!-- <div class="back"></div> -->
+        </div>
+        <div class="logo2 back"></div>
         <div class="logo3"></div>
         <div class="logo4"></div>
         <div class="logo5"></div>
