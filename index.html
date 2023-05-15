@@ -22,25 +22,38 @@
       name="viewport"
     />
     <link rel="stylesheet" href="normalize.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
-      href="assets/fontawesome-free-6.4.0-web/css/all.min.css"
-    />
-    <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans?preview.size=26&query=Josefin+Sans"> -->
+    /> -->
+
     <style>
+      @font-face {
+        font-family: josapin;
+        src: url(assets/fonts/JosefinSans-Regular.ttf);
+      }
+      @font-face {
+        font-family: lato;
+        src: url(assets/fonts/Lato-Regular.ttf);
+      }
+      @font-face {
+        font-family: Lobster;
+        src: url(assets/fonts/Lobster-Regular.ttf);
+      }
       body {
         position: relative;
         background-color: black;
         padding: 0px 72px 0px 72px;
       }
       * {
-        color: rgb(0, 255, 47);
+        color: white;
       }
       section {
         position: relative;
         height: 717px;
         left: 0px;
-
         border-radius: 0px;
         border: 3px solid blue;
       }
@@ -48,56 +61,58 @@
         top: 0px;
       }
       .header {
-        border: 1px solid;
+        border-bottom: 2px solid purple;
         display: flex;
         align-items: center;
+        height: 50px;
       }
-      .logoring {
-        margin: 16px 0px 0px 0px;
+      .brand {
+        height: 58px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 85px;
-        height: 85px;
-        background-color: rgb(246, 4, 4);
-        border-radius: 100px;
+        /* border: 1px solid; */
       }
-      .logo {
-        width: 76px;
-        height: 76px;
-        background: url(assets/images/logo.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 100px;
+      .sks {
+        background: linear-gradient(45deg, rgb(221, 0, 255), white);
+        -webkit-background-clip: text; /* For Safari */
+        -webkit-text-fill-color: transparent; /* For Safari */
+        background-clip: text;
+        color: transparent;
+        font-family: Lobster, cursive;
       }
+
       nav {
-        border: 1px solid red;
-        margin-left: 70px;
+        /* border: 1px solid rgb(0, 225, 255); */
+        margin-left: 170px;
       }
       .navlink {
         padding: 0;
-        height: 32px;
         width: 900px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid;
+        /* border: 1px solid; */
       }
       .navlink li {
-        border: 1px solid;
+        /* border: 1px solid; */
         display: inline-block;
         list-style: none;
       }
       .navlink li a {
-        font-size: larger;
-        /* font-weight:st; */
-        /* font-style: italic; */
-        font-family: Josefin Sans;
+        background: linear-gradient(45deg, rgb(221, 0, 255), rgb(255, 0, 212));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-size: 1.275rem;
         text-decoration: none;
+        font-family: josapin;
       }
       a:hover {
-        color: white;
-        font-weight: bold;
+        /* color: white; */
+        font-weight: bolder;
+        /* font-size: 1.4rem; */
       }
       .welcomeword p {
         display: flex;
@@ -145,18 +160,29 @@
         top: 150px;
         border: 1px solid red;
         width: 800px;
-        height: 130px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        flex-grow: inherit;
       }
       .hi_box {
         position: absolute;
         border: 1px solid;
-        width: 20%;
+        /* width: px; */
+        font-size: 1em;
+        font-family: josapin;
+        line-height: 3.375rem;
+      }
+      .hi_box span {
+        color: aqua;
+        font-weight: bold;
+        font-size: 2rem;
       }
       .move_box {
         position: absolute;
-        border: 1px solid;
-        width: 50%;
-        right: 20%;
+        border: 1px solid yellow;
+        width: 350px;
+        /* right: 20%; */
       }
 
       .Hsocial {
@@ -181,10 +207,9 @@
         background-color: aqua;
         /* margin: 10px; */
       }
-      .Hsocial div:hover{
+      .Hsocial div:hover {
         background-color: white;
         cursor: pointer;
-        
       }
       .Hsocial div div {
         border: 1px solid rgb(255, 242, 4);
@@ -195,9 +220,8 @@
         /* background-color: black; */
         /* margin: 10px; */
       }
-      .Hsocial div div :hover{
+      .Hsocial div div :hover {
         transform: scale(2px);
-
       }
       /* .back {
         background-color: rgb(9, 252, 29);
@@ -256,9 +280,7 @@
   <body>
     <section class="homepage">
       <div class="header">
-        <div class="logoring">
-          <div class="logo"></div>
-        </div>
+        <div class="brand"><h2 class="sks">SKS_one</h2></div>
         <nav>
           <ul class="navlink">
             <li><a href="home">Home</a></li>
