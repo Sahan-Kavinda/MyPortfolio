@@ -117,7 +117,7 @@ place-items: center;
 /*  */
 
 .profilelogo_gradient-ring {
-  position: relative;
+  /* position: relative; */
   border-radius: 50%;
   width: 500px;
   height: 500px;
@@ -125,19 +125,7 @@ place-items: center;
   animation: rotate 1s linear infinite;
   /* filter: blur(25px); */
 }
-/* .profilelogo_gradient-ring ::after{
-  z-index: 15;
-  content: '';
-  border-radius: 50%;
- position: absolute;
- top: 5px;
- bottom: 5px;
- right: 5px;
- left: 5px;
- background-color: black;
-  /* background: linear-gradient( rgb(255, 0, 208), rgb(162, 0, 255)); */
-  /* filter: blur(50px); */
-} */
+
 
 @keyframes rotate {
   0% {
@@ -162,6 +150,20 @@ place-items: center;
 
   /* border: 1px solid; */
 }
+.backgroud_mesh{
+  position: relative;
+  z-index:-1;
+  opacity: 0.5;
+  top: 2rem;
+  left: -20rem;
+   border-radius: 50%;
+  width: 600px;
+  height:300px;
+  background: linear-gradient( rgb(255, 0, 208), rgb(166, 0, 255),rgb(255, 0, 0));
+  animation: rotate 8s linear infinite;
+  filter: blur(150px);
+
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -178,6 +180,7 @@ footer {
   /* border: 1px solid white; */
 }
 .hi_box {
+  z-index: 999;
   /* border: 1px solid red; */
 }
 .hi_box > h2 {
@@ -194,6 +197,7 @@ footer {
   font-size: 2rem;
 }
 .move_box {
+  z-index: 999;
   display: flex;
   align-items: end;
   /* margin-bottom: 0.01rem; */
