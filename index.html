@@ -21,272 +21,8 @@
       content="width=device-width initial-scale=10 minimum-scale=2 maximum-scale=4"
       name="viewport"
     />
-    <link rel="stylesheet" href="normalize.css" />
-    
-
-    <style>
-      @font-face {
-        font-family: josapin;
-        src: url(assets/fonts/JosefinSans-Regular.ttf);
-      }
-      @font-face {
-        font-family: lato;
-        src: url(assets/fonts/Lato-Regular.ttf);
-      }
-      @font-face {
-        font-family: Lobster;
-        src: url(assets/fonts/Lobster-Regular.ttf);
-      }
-      body {
-        box-sizing: border-box;
-        position: relative;
-        background-color: black;
-        /* padding: 0px 72px 0px 72px; */
-      }
-      * {
-        color: white;
-      }
-      section {
-        margin: 0 72px 0 72px;
-        position: relative;
-        height: 717px;
-        left: 0px;
-        border-radius: 0px;
-        /* border: 3px solid blue; */
-      }
-      .homepage {
-        top: 0px;
-      }
-      .header {
-        z-index: 5;
-        background-color:rgb(0, 0, 0);
-        position: fixed;
-        border-bottom: 2px solid purple;
-        display: flex;
-        align-items: center;
-        height: 50px;
-        width: 100vw;
-      }
-      .brand {
-        margin-left: 72px;
-        height: 58px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* border: 1px solid; */
-      }
-      .sks {
-        background: linear-gradient(45deg, rgb(221, 0, 255), white);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: Lobster, cursive;
-      }
-
-      nav {
-        /* border: 1px solid rgb(0, 225, 255); */
-        margin-left: 170px;
-      }
-      .navlink {
-        padding: 0;
-        width: 900px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* border: 1px solid; */
-      }
-      .navlink li {
-        /* border: 1px solid; */
-        display: inline-block;
-        list-style: none;
-      }
-      .navlink li a {
-        background: linear-gradient(45deg, rgb(221, 0, 255), rgb(255, 0, 212));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-size: 1.375rem;
-        text-decoration: none;
-        font-family: josapin;
-        
-      }
-      a:hover {
-      
-        font-weight: bolder;
-        
-      }
-      .welcomeword p {
-        display: flex;
-        justify-content: center;
-        /* border: 1px solid; */
-        margin: 0.5em;
-        font-size: 1em;
-        color:white;
-      }
-
-      .welcomeword {
-        position: absolute;
-        width: 700px;
-        left: 15px;
-        top: 370px;
-        /* border: 1px solid; */
-      }
-      .profilelogo_ring {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        border-radius: 100%;
-        width: 500px;
-        height: 500px;
-        right: 0;
-        border: 10px solid;
-        margin: 6rem 0.5rem;
-      }
-      .profilelogo {
-        background: url(assets/images/about10.jpg);
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        border-radius: 100%;
-        width: 450px;
-        height: 450px;
-
-        border: 1px solid;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        border: 2px solid yellow;
-      }
-      .head_line_box {
-        /* margin: 0; */
-        position: absolute;
-        left: 0;
-        top: 150px;
-        display: grid;
-        grid-template-columns: 21% 79%;
-        width: 700px;
-        /* border: 1px solid white; */
-      }
-      .hi_box {
-        /* border: 1px solid red; */
-        
-      }
-      .hi_box>h2{
-        font-size: 1.4em;
-        font-family: josapin;
-        line-height: 2.5rem;
-        color: white;
-        
-        font-weight: normal;
-      }
-      .hi_box span {
-        color:white;
-        font-weight: bold;
-        font-size: 2rem;
-      }
-      .move_box {
-        display: flex;
-        align-items: end;
-        /* margin-bottom: 0.01rem; */
-        
-
-        /* border: 1px solid yellow; */
-      }
-      .move_box>h1{
-        
-        margin-bottom: 1.7rem;
-      
-      background: linear-gradient(to right, rgb(244, 184, 253), rgb(238, 0, 255));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-size: 3.5rem;
-        text-decoration: none;
-        font-family: josapin;
-    }
-
-      .Hsocial {
-        position: absolute;
-        bottom: 45px;
-        justify-content: space-between;
-        display: flex;
-        /* border: 1px solid pink; */
-        width: 300px;
-        height: 50px;
-        align-items: center;
-      }
-      .Hsocial div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* border: 1px solid rgb(250, 250, 250); */
-        height: 39px;
-        width: 39px;
-        border-radius: 100%;
-        padding: 0px;
-        background-color:rgb(255, 0, 255);
-      }
-      .Hsocial div:hover {
-        background-color:white;
-        cursor: pointer;
-      }
-      .Hsocial div div {
-        /* border: 1px solid rgb(255, 242, 4); */
-        height: 35px;
-        width: 35px;
-        border-radius: 100%;
-        padding: 0px;
-      }
-      .Hsocial div div :hover {
-        /* transform: scale(2px); */
-      }
-
-      .logo1 {
-        background: url(assets/images/social/facebook.png);
-        background-size: 40px;
-
-        background-position: center;
-      }
-      .logo2 {
-        background: url(assets/images/social/instagram.png);
-
-        background-size: cover;
-        background-position: center;
-      }
-      .logo3 {
-        background: url(assets/images/social/twitter.png);
-
-        background-size: 40px;
-
-        background-position: center;
-      }
-      .logo4 {
-        background: url(assets/images/social/linkedin.png);
-
-        background-size: cover;
-
-        background-position: center;
-      }
-      .logo5 {
-        background: url(assets/images/social/whatsapp.png);
-
-        background-size: cover;
-
-        background-position: center;
-      }
-      .logo6 {
-        background: url(assets/images/social/github.png);
-
-        background-size: cover;
-
-        background-position: center;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -303,9 +39,9 @@
           </ul>
         </nav>
       </div>
-    <section class="homepage">
-     
 
+
+    <section class="homepage">
       <div class="head_line_box">
         <div class="hi_box">
           <h2>
@@ -320,8 +56,10 @@
           
         </div>
       </div>
-      <div class="profilelogo_ring">
-        <div class="profilelogo"></div>
+      <div class="logo_box">
+      <div class="profilelogo_gradient-ring">   
+      </div>
+      <div class="H_logo"></div>
       </div>
 
       <div class="welcomeword">
