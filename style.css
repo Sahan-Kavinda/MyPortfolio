@@ -19,13 +19,18 @@ body {
 * {
   color: rgb(255, 255, 255);
 }
+p{
+  font-family: lato;
+  font-size: 0.9rem;
+  /* color: red; */
+}
 section {
   margin: 0 72px 0 72px;
   position: relative;
   height: 717px;
   left: 0px;
   border-radius: 0px;
-  /* border: 3px solid blue; */
+  border: 1px solid blue;
 }
 .homepage {
   top: 0px;
@@ -103,16 +108,15 @@ a:hover {
   top: 370px;
   /* border: 1px solid; */
 }
-.logo_box{
+.logo_box {
   /* border: 1px solid white; */
-  width:500px;
+  width: 500px;
   height: 500px;
   position: absolute;
   right: 2rem;
   top: 7rem;
   display: grid;
-place-items: center;
-
+  place-items: center;
 }
 /*  */
 
@@ -121,11 +125,14 @@ place-items: center;
   border-radius: 50%;
   width: 500px;
   height: 500px;
-  background: linear-gradient( rgb(255, 0, 208), rgb(162, 0, 255));
-  animation: rotate 1s linear infinite;
-  /* filter: blur(25px); */
+  background: linear-gradient(
+    rgb(255, 0, 208),
+    rgb(162, 0, 255),
+    transparent 80%
+  );
+  animation: rotate 8s linear infinite;
+  filter: blur(5px);
 }
-
 
 @keyframes rotate {
   0% {
@@ -150,19 +157,22 @@ place-items: center;
 
   /* border: 1px solid; */
 }
-.backgroud_mesh{
+.backgroud_mesh {
   position: relative;
-  z-index:-1;
+  z-index: -1;
   opacity: 0.5;
   top: 2rem;
   left: -20rem;
-   border-radius: 50%;
+  border-radius: 50%;
   width: 600px;
-  height:300px;
-  background: linear-gradient( rgb(255, 0, 208), rgb(166, 0, 255),rgb(255, 0, 0));
+  height: 300px;
+  background: linear-gradient(
+    rgb(255, 0, 208),
+    rgb(166, 0, 255),
+    rgb(255, 0, 0)
+  );
   animation: rotate 8s linear infinite;
   filter: blur(150px);
-
 }
 footer {
   position: absolute;
@@ -235,25 +245,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid rgb(250, 250, 250); */
-  height: 39px;
-  width: 39px;
+  /* border: 3px solid rgb(250, 250, 250); */
+  height: 36px;
+  width: 36px;
   border-radius: 100%;
   padding: 0px;
-  background-color: rgb(255, 0, 255);
+  background-color: white;
 }
 .Hsocial div:hover {
-  background-color: white;
+  background-color: rgb(255, 0, 255);
   cursor: pointer;
 }
 .Hsocial div div {
-  /* border: 1px solid rgb(255, 242, 4); */
+  border: 3px liner;
   height: 35px;
   width: 35px;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0px;
 }
-
 
 .logo1 {
   background: url(../assets/images/social/facebook.png);
@@ -264,7 +273,7 @@ footer {
 .logo2 {
   background: url(../assets/images/social/instagram.png);
 
-  background-size: cover;
+  background-size: 40px;
   background-position: center;
 }
 .logo3 {
@@ -291,18 +300,18 @@ footer {
 .logo6 {
   background: url(../assets/images/social/github.png);
 
-  background-size: cover;
+  background-size: 37px;
 
   background-position: center;
 }
-.ringg{
+.ringg {
   border-radius: 50%;
-width: 200px;
-height: 200px;
-background: linear-gradient(45deg,red,yellow,transparent 80%);
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, red, yellow, transparent 80%);
 }
-.rinng::before{
-  content: '';
+.rinng::before {
+  content: "";
   position: absolute;
   top: 6px;
   right: 6px;
@@ -312,16 +321,96 @@ background: linear-gradient(45deg,red,yellow,transparent 80%);
   border-radius: 50%;
   z-index: 1000;
 }
-.ringg ::after{
-  content: '';
+.ringg ::after {
+  content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   left: 0px;
   bottom: 0px;
-  background: linear-gradient(45deg,red,yellow,transparent 80%);
+  background: linear-gradient(45deg, red, yellow, transparent 80%);
   border-radius: 50%;
   z-index: 1000;
   z-index: 1;
 }
+.abut {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+.aboutimg {
+  border: 1px solid red;
+  height: 600px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  
+}
+.aboutme {
+  margin: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/* justify-items: center; */
+  border: 1px solid green;
+}
+.aboutme h1 {
+  border: 1px solid;
+}
+.about_p {
+  
+  margin: 0px 50px 10px;
+  border: 2px solid red;
+}
+.items{
+  border: 1px solid red;
+  margin: 20px;
+}
+.box1{
+  background: url(assets/images/about01.jpg);
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: yellow 10px; */
+  width: 250px;
+  height: 250px;
+  
+}
+.box2{
+  background: url(assets/images/about02.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.box3{
+  background: url(assets/images/about03.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 175px;
+  height: 175px;
+}
+.box4{
+  background: url(assets/images/about04.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  animation-name: moving;
+  animation-timing-function: linear;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
 
+.h1font {
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 184, 253),
+    rgb(238, 0, 255)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: josapin;
+}
