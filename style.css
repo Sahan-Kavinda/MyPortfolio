@@ -19,7 +19,7 @@ body {
 * {
   color: rgb(255, 255, 255);
 }
-p{
+p {
   font-family: lato;
   font-size: 0.9rem;
   /* color: red; */
@@ -265,40 +265,40 @@ footer {
 }
 
 .logo1 {
-  background: url(../assets/images/social/facebook.png);
+  background: url(assets/images/social/facebook.png);
   background-size: 40px;
 
   background-position: center;
 }
 .logo2 {
-  background: url(../assets/images/social/instagram.png);
+  background: url(assets/images/social/instagram.png);
 
   background-size: 40px;
   background-position: center;
 }
 .logo3 {
-  background: url(../assets/images/social/twitter.png);
+  background: url(assets/images/social/twitter.png);
 
   background-size: 40px;
 
   background-position: center;
 }
 .logo4 {
-  background: url(../assets/images/social/linkedin.png);
+  background: url(assets/images/social/linkedin.png);
 
   background-size: cover;
 
   background-position: center;
 }
 .logo5 {
-  background: url(../assets/images/social/whatsapp.png);
+  background: url(assets/images/social/whatsapp.png);
 
   background-size: cover;
 
   background-position: center;
 }
 .logo6 {
-  background: url(../assets/images/social/github.png);
+  background: url(assets/images/social/github.png);
 
   background-size: 37px;
 
@@ -345,52 +345,49 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  
 }
 .aboutme {
   margin: 40px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-/* justify-items: center; */
+  /* justify-items: center; */
   border: 1px solid green;
 }
 .aboutme h1 {
   border: 1px solid;
 }
 .about_p {
-  
   margin: 0px 50px 10px;
   border: 2px solid red;
 }
-.items{
+.items {
   border: 1px solid red;
   margin: 20px;
 }
-.box1{
+.box1 {
   background: url(assets/images/about01.jpg);
   background-size: cover;
   background-position: center;
   /* box-shadow: yellow 10px; */
   width: 250px;
   height: 250px;
-  
 }
-.box2{
+.box2 {
   background: url(assets/images/about02.jpg);
   background-size: cover;
   background-position: center;
   width: 200px;
   height: 200px;
 }
-.box3{
+.box3 {
   background: url(assets/images/about03.jpg);
   background-size: cover;
   background-position: center;
   width: 175px;
   height: 175px;
 }
-.box4{
+.box4 {
   background: url(assets/images/about04.jpg);
   background-size: cover;
   background-position: center;
@@ -398,7 +395,8 @@ footer {
   height: 150px;
   animation-name: moving;
   animation-timing-function: linear;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .h1font {
