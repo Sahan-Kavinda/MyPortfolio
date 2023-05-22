@@ -19,15 +19,16 @@ body {
 * {
   color: rgb(255, 255, 255);
 }
-p {
+
+/* p {
   font-family: lato;
   font-size: 0.9rem;
-  /* color: red; */
-}
+} */
+
 section {
   margin: 0 72px 0 72px;
   position: relative;
-  height: 717px;
+  height:100vh;
   left: 0px;
   border-radius: 0px;
   border: 1px solid blue;
@@ -36,7 +37,7 @@ section {
   top: 0px;
 }
 .header {
-  z-index: 5;
+  z-index: 1000;
   background-color: rgb(0, 0, 0);
   position: fixed;
   border-bottom: 2px solid purple;
@@ -95,7 +96,7 @@ a:hover {
 .welcomeword p {
   display: flex;
   justify-content: center;
-  /* border: 1px solid; */
+  /* border: 1px solid pink; */
   margin: 0.5em;
   font-size: 1em;
   color: white;
@@ -304,66 +305,55 @@ footer {
 
   background-position: center;
 }
-.ringg {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(45deg, red, yellow, transparent 80%);
-}
-.rinng::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  left: 6px;
-  bottom: 6px;
-  background: #00f925;
-  border-radius: 50%;
-  z-index: 1000;
-}
-.ringg ::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  background: linear-gradient(45deg, red, yellow, transparent 80%);
-  border-radius: 50%;
-  z-index: 1000;
-  z-index: 1;
-}
+/* about me css */
+
 .abut {
   display: grid;
   grid-template-columns: 60% 40%;
   height: 100vh;
 }
-.aboutimg {
-  border: 1px solid red;
-  height: 600px;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-}
+
 .aboutme {
   margin: 40px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-items: center; */
-  border: 1px solid green;
+ 
 }
 .aboutme h1 {
   border: 1px solid;
 }
 .about_p {
-  margin: 0px 50px 10px;
-  border: 2px solid red;
+  margin: 0px 10px 10px;
+  /* border: 2px solid red; */
+}
+.about_p > p {
+font-family: 'Times New Roman', Times, serif;
+  font-weight:100;
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  line-height: 0.8rem;
+  color: white;
+}
+.aboutimg {
+  /* border: 1px solid red; */
+  height: 600px;
+  padding: 50px;
+ 
+}
+.fourborder{
+ 
+   display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  /* width: 600px; */
+  height: 600px;
+  /* border: 1px solid red; */
 }
 .items {
-  border: 1px solid red;
-  margin: 20px;
+  /* border: 1px solid red; */
+  margin: 60px;
 }
 .box1 {
   background: url(assets/images/about01.jpg);
@@ -372,7 +362,9 @@ footer {
   /* box-shadow: yellow 10px; */
   width: 250px;
   height: 250px;
+  animation: box1 3s infinite 1s infinite linear;
 }
+
 .box2 {
   background: url(assets/images/about02.jpg);
   background-size: cover;
@@ -411,4 +403,26 @@ footer {
   font-size: 4rem;
   text-decoration: none;
   font-family: josapin;
+}
+/* skills page css */
+.skillpage{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+}
+.gridboxskill1{
+
+  height: 100vh;
+  border: 1px solid red;
+}
+.skillparagraph{
+
+  height: 100vh;
+  border: 1px solid red;
+}
+.skillparagraph > .h1font{
+  display: flex854;
+  justify-content: center;
+  margin-top: 100px;
+  border: 1px solid red;
 }
