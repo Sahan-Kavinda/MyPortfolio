@@ -28,7 +28,7 @@ body {
 section {
   margin: 0 72px 0 72px;
   position: relative;
-  height:100vh;
+  height: 100vh;
   left: 0px;
   border-radius: 0px;
   border: 1px solid blue;
@@ -318,18 +318,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 .aboutme h1 {
-  border: 1px solid;
+  /* border: 1px solid red; */
+  margin: 40px 0 0 0;
 }
 .about_p {
   margin: 0px 10px 10px;
   /* border: 2px solid red; */
 }
 .about_p > p {
-font-family: 'Times New Roman', Times, serif;
-  font-weight:100;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
   display: flex;
   justify-content: center;
   font-size: 1em;
@@ -340,11 +340,9 @@ font-family: 'Times New Roman', Times, serif;
   /* border: 1px solid red; */
   height: 600px;
   padding: 50px;
- 
 }
-.fourborder{
- 
-   display: grid;
+.fourborder {
+  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   /* width: 600px; */
@@ -404,25 +402,83 @@ font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   font-family: josapin;
 }
+
 /* skills page css */
-.skillpage{
+
+.skillpage {
+  position: relative;
+}
+
+.skillparagraph {
+  top: 80px;
+  right: 60px;
+  z-index: 10;
+  position: absolute;
+
+  padding: 30px 30px 0px;
+  text-align: center;
+  width: 500px;
+}
+.skillparagraph > .h1font {
+  margin: 0;
+  text-align: center;
+}
+.skillparagraph > p {
+  line-height: 1.8rem;
+}
+.skilltoolgrid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  border: 1px solid white;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgb(255, 0, 0);
+  margin: 0;
+}
+.SI_icon {
+  border: 1px solid white;
+}
+.skill_box {
+  margin-top: 50px;
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  border: 5px solid white;
+  width: 700px;
+  /* height: 695px; */
   
 }
-.gridboxskill1{
-
-  height: 100vh;
-  border: 1px solid red;
+.watermark{
+  transform: rotate(-45deg);
+  /* transform: translate(50% 50%); */
+  color:white;
+  position: absolute;
+  /* z-index: 300; */
+  position: absolute;
+  font-size: 8rem;
+  opacity: 0.1;
 }
-.skillparagraph{
-
-  height: 100vh;
-  border: 1px solid red;
+.skill_ring{
+  position: absolute;
+  /* z-index: 100; */
+  width: 500px;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: linear-gradient(to right,rgb(255, 0, 204),black);
 }
-.skillparagraph > .h1font{
-  display: flex854;
-  justify-content: center;
-  margin-top: 100px;
-  border: 1px solid red;
+.skill_ring::before{
+  position: absolute;
+  content: '';
+   /* width: 500px;
+  height: 500px; */
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: black;
 }
