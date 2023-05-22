@@ -428,17 +428,20 @@ footer {
 }
 .skilltoolgrid {
   display: grid;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
   width: 600px;
   height: 600px;
-  border: 1px solid rgb(255, 0, 0);
+  /* border: 1px solid rgb(255, 0, 0); */
   margin: 0;
 }
-.SI_icon {
-  border: 1px solid white;
+.hover:hover {
+  transform: scale(1.5);
+  box-shadow: 6px 6px 8px rgb(255, 0, 191);
+  border-radius: 50%;
+  
 }
 .skill_box {
   margin-top: 50px;
@@ -446,7 +449,7 @@ footer {
  display: flex;
  justify-content: center;
  align-items: center;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   width: 700px;
   /* height: 695px; */
   
@@ -454,7 +457,7 @@ footer {
 .watermark{
   transform: rotate(-45deg);
   /* transform: translate(50% 50%); */
-  color:white;
+  /* color:white; */
   position: absolute;
   /* z-index: 300; */
   position: absolute;
@@ -463,22 +466,161 @@ footer {
 }
 .skill_ring{
   position: absolute;
-  /* z-index: 100; */
+  z-index: -100;
   width: 500px;
   height: 500px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 50%;
-  background: linear-gradient(to right,rgb(255, 0, 204),black);
+  background: linear-gradient(to right,rgb(255, 0, 204),transparent 95%);
+  animation: ringskill 10s linear infinite ;
+  opacity: 0.5;
 }
 .skill_ring::before{
   position: absolute;
   content: '';
    /* width: 500px;
   height: 500px; */
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
   border-radius: 50%;
   background-color: black;
+}
+@keyframes ringskill {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.SI_box3{
+  background: url(assets/images/java.png);
+  background-size: cover;
+background-position: center;
+}
+.SI_box10{
+  background: url(assets/images/python.png);
+  background-size: cover;
+background-position: center;
+}
+.SI_box20{
+  background: url(assets/images/sql.png);
+  background-size: cover;
+background-position: center;
+}
+.SI_box23{
+  background: url(assets/images/figma.png);
+  background-size: cover;
+background-position: center;
+}
+.SI_box16{
+  background: url(assets/images/css01.png);
+  background-size: cover;
+background-position: center;
+}
+.SI_box6{
+  background: url(assets/images/html.png);
+  background-size: cover;
+background-position: center;
+}
+
+/* project page css */
+.project_page{
+  position: relative;
+}
+.projectword_box{
+  border-radius: 50%;
+  height: 550px;
+  width: 550px;
+  /* border: 1px solid white; */
+  position: absolute;
+  right: 50px;
+  top: 100px;
+display: flex;
+ justify-content: center;
+ align-items: center;
+   flex-direction: column;
+} 
+.projectword_box p{
+  z-index: 100;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.5rem;
+}
+.projectword_box .h1font{
+  margin: 0;
+  z-index: 100;
+}
+.projectword_box .p_ring{
+  /* border: 1px solid white; */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(to right,rgb(246, 141, 225),transparent 50%);
+  animation: project_ring 3s linear infinite ;
+}
+.projectword_box:hover{
+  transform: scale(1.1);
+  box-shadow: 6px 5px 10px white;
+}
+
+.projectword_box .p_ring::before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  background: black;
+  border-radius: 50%;
+
+}
+
+@keyframes project_ring {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.main_project_box{
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 600px;
+  height: 600px;
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.project_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+  /* border: 5px solid red; */
+  padding: 5px;
+}
+.project_box:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgb(255, 255, 255);
+  /* transition: ease-in-out; */
+}
+.pbi{
+  margin: 0;
+border: 1px solid white;
+width: 250px;
+height: 150px;
+}
+.main_project_box p{
+  margin: 0;
 }
