@@ -442,6 +442,7 @@ footer {
   box-shadow: 6px 6px 8px rgb(255, 0, 191);
   border-radius: 50%;
   
+  
 }
 .skill_box {
   margin-top: 50px;
@@ -567,6 +568,7 @@ display: flex;
 .projectword_box:hover{
   transform: scale(1.1);
   box-shadow: 6px 5px 10px white;
+  /* animation: none; */
 }
 
 .projectword_box .p_ring::before{
@@ -623,4 +625,72 @@ height: 150px;
 }
 .main_project_box p{
   margin: 0;
+}
+/* contact me page */
+.contactMe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.contacth1{
+ margin-top: 80px;
+  /* top: 100px; */
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.tanks_box{
+  font-style: normal;
+  /* border: 1px solid red; */
+  text-align: center;
+  width: 1000px;
+  line-height: 1.8rem;
+}
+.contactSocial{
+  margin-top: 20px;
+  /* border: 1px solid red ; */
+  display: flex;
+  width: 600px;
+  height: 80px;
+
+}
+.contactScocialIcon{
+  /* border: 1px solid yellow; */
+   width: 100px;
+   margin-left: 10px;
+   margin-right: 10px;
+ 
+}
+.CS1{
+  background: url(assets/images/whatsapp.png);
+  background-size: cover;
+  background-position: center;
+}
+.CS2{
+  background: url(assets/images/linkedin.png);
+  background-size: cover;
+  background-position: center;
+}
+.CS3{
+  background: url(assets/images/twitter.png);
+  background-size: cover;
+  background-position: center;
+}
+.CS4{
+  background: url(assets/images/instagram.png);
+  background-size: cover;
+  background-position: center;
+}
+.CS5{
+  background: url(assets/images/facebook.png);
+  background-size: cover;
+  background-position: center;
+}
+.CS6{
+  background: url(assets/images/github.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
 }
