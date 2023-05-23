@@ -10,20 +10,21 @@
   font-family: Lobster;
   src: url(assets/fonts/Lobster-Regular.ttf);
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
   position: relative;
   background-color: black;
-  /* padding: 0px 72px 0px 72px; */
 }
 * {
   color: rgb(255, 255, 255);
 }
 
-/* p {
-  font-family: lato;
-  font-size: 0.9rem;
-} */
+p {
+  color: #c0c0c0;
+}
 
 section {
   margin: 0 72px 0 72px;
@@ -31,7 +32,8 @@ section {
   height: 100vh;
   left: 0px;
   border-radius: 0px;
-  border: 1px solid blue;
+
+  border-bottom: 2px solid purple;
 }
 .homepage {
   top: 0px;
@@ -52,7 +54,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid; */
 }
 .sks {
   background: linear-gradient(45deg, rgb(221, 0, 255), white);
@@ -64,7 +65,6 @@ section {
 }
 
 nav {
-  /* border: 1px solid rgb(0, 225, 255); */
   margin-left: 170px;
 }
 .navlink {
@@ -73,12 +73,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid; */
 }
 .navlink li {
-  /* border: 1px solid; */
   display: inline-block;
   list-style: none;
+  color: white;
+}
+.navlink li:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.498);
 }
 .navlink li a {
   background: linear-gradient(45deg, rgb(221, 0, 255), rgb(255, 0, 212));
@@ -89,14 +93,13 @@ nav {
   font-size: 1.375rem;
   text-decoration: none;
   font-family: josapin;
+  color: rgb(251, 0, 255);
 }
-a:hover {
-  font-weight: bolder;
-}
+
 .welcomeword p {
   display: flex;
   justify-content: center;
-  /* border: 1px solid pink; */
+
   margin: 0.5em;
   font-size: 1em;
   color: white;
@@ -107,10 +110,8 @@ a:hover {
   width: 700px;
   left: 15px;
   top: 370px;
-  /* border: 1px solid; */
 }
 .logo_box {
-  /* border: 1px solid white; */
   width: 500px;
   height: 500px;
   position: absolute;
@@ -119,10 +120,8 @@ a:hover {
   display: grid;
   place-items: center;
 }
-/*  */
 
 .profilelogo_gradient-ring {
-  /* position: relative; */
   border-radius: 50%;
   width: 500px;
   height: 500px;
@@ -153,10 +152,6 @@ a:hover {
   width: 485px;
   height: 485px;
   border: 1.2px solid rgb(255, 1, 247);
-  /* box-shadow: 5px 5px black ; */
-  /* opacity: 1; */
-
-  /* border: 1px solid; */
 }
 .backgroud_mesh {
   position: relative;
@@ -175,24 +170,17 @@ a:hover {
   animation: rotate 8s linear infinite;
   filter: blur(150px);
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  border: 2px solid yellow;
-}
+
 .head_line_box {
-  /* margin: 0; */
   position: absolute;
   left: 0;
   top: 150px;
   display: grid;
   grid-template-columns: 21% 79%;
   width: 700px;
-  /* border: 1px solid white; */
 }
 .hi_box {
   z-index: 999;
-  /* border: 1px solid red; */
 }
 .hi_box > h2 {
   font-size: 1.4em;
@@ -211,9 +199,6 @@ footer {
   z-index: 999;
   display: flex;
   align-items: end;
-  /* margin-bottom: 0.01rem; */
-
-  /* border: 1px solid yellow; */
 }
 .move_box > h1 {
   margin-bottom: 0.8rem;
@@ -224,7 +209,7 @@ footer {
     rgb(238, 0, 255)
   );
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
+
   background-clip: text;
   color: transparent;
   font-size: 3.5rem;
@@ -237,7 +222,7 @@ footer {
   bottom: 45px;
   justify-content: space-between;
   display: flex;
-  /* border: 1px solid pink; */
+
   width: 300px;
   height: 50px;
   align-items: center;
@@ -246,7 +231,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 3px solid rgb(250, 250, 250); */
+
   height: 36px;
   width: 36px;
   border-radius: 100%;
@@ -305,7 +290,7 @@ footer {
 
   background-position: center;
 }
-/* about me css */
+/* about me page css */
 
 .abut {
   display: grid;
@@ -320,12 +305,10 @@ footer {
   align-items: center;
 }
 .aboutme h1 {
-  /* border: 1px solid red; */
   margin: 40px 0 0 0;
 }
 .about_p {
   margin: 0px 10px 10px;
-  /* border: 2px solid red; */
 }
 .about_p > p {
   font-family: "Times New Roman", Times, serif;
@@ -334,10 +317,8 @@ footer {
   justify-content: center;
   font-size: 1em;
   line-height: 0.8rem;
-  color: white;
 }
 .aboutimg {
-  /* border: 1px solid red; */
   height: 600px;
   padding: 50px;
 }
@@ -345,19 +326,17 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  /* width: 600px; */
+
   height: 600px;
-  /* border: 1px solid red; */
 }
 .items {
-  /* border: 1px solid red; */
   margin: 60px;
 }
 .box1 {
   background: url(assets/images/about01.jpg);
   background-size: cover;
   background-position: center;
-  /* box-shadow: yellow 10px; */
+
   width: 250px;
   height: 250px;
   animation: box1 3s infinite 1s infinite linear;
@@ -428,13 +407,13 @@ footer {
 }
 .skilltoolgrid {
   display: grid;
-  /* border: 1px solid white; */
+
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
   width: 600px;
   height: 600px;
-  /* border: 1px solid rgb(255, 0, 0); */
+
   margin: 0;
 }
 .hover:hover {
@@ -443,21 +422,19 @@ footer {
   border-radius: 50%;
 }
 .skill_box {
-  margin-top: 50px;
-
+  margin-top: 120px;
+/* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 5px solid white; */
+
   width: 700px;
-  /* height: 695px; */
 }
 .watermark {
   transform: rotate(-45deg);
-  /* transform: translate(50% 50%); */
-  /* color:white; */
+
   position: absolute;
-  /* z-index: 300; */
+
   position: absolute;
   font-size: 8rem;
   opacity: 0.1;
@@ -467,7 +444,7 @@ footer {
   z-index: -100;
   width: 500px;
   height: 500px;
-  /* border: 2px solid white; */
+
   border-radius: 50%;
   background: linear-gradient(to right, rgb(255, 0, 204), transparent 95%);
   animation: ringskill 10s linear infinite;
@@ -476,8 +453,7 @@ footer {
 .skill_ring::before {
   position: absolute;
   content: "";
-  /* width: 500px;
-  height: 500px; */
+
   top: 15px;
   bottom: 15px;
   left: 15px;
@@ -587,11 +563,11 @@ footer {
 }
 
 .main_project_box {
-  margin-top: 40px;
+  position: absolute;
+  top: 96px;
   margin-left: 40px;
   width: 600px;
   height: 600px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -602,7 +578,7 @@ footer {
   align-items: center;
   flex-direction: column;
   margin: 5px;
-border-radius: 30px;
+  border-radius: 30px;
   padding: 5px;
 }
 .project_box:hover {
@@ -627,45 +603,42 @@ border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 0; */
+
   padding: 0;
 }
 .contacth1 {
   margin-top: 70px;
-  /* top: 100px; */
-  /* border: 1px solid red; */
+
   text-align: center;
 }
 .tanks_box {
   position: absolute;
   font-style: normal;
-  /* border: 1px solid red; */
+
   text-align: center;
   width: 1000px;
   line-height: 1.8rem;
-  /* margin-top: 10px; */
+
   top: 170px;
 }
-.tanks_box a{
+.tanks_box a {
   text-decoration: none;
-  color:lightblue;
+  color: rgb(3, 192, 255);
 }
-.tanks_box a:hover{
-  color:rgb(246, 255, 0);
+.tanks_box a:hover {
+  color: rgb(246, 255, 0);
   font-size: x-large;
-  /* transform: scale(3); */
 }
 .contactSocial {
   position: absolute;
   top: 500px;
   margin-top: 20px;
-  /* border: 1px solid red ; */
+
   display: flex;
   width: 600px;
   height: 80px;
 }
 .contactScocialIcon {
-  /* border: 1px solid yellow; */
   width: 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -713,7 +686,7 @@ border-radius: 30px;
   position: absolute;
   z-index: -1;
   opacity: 0.5;
-  /* top:200px; */
+
   left: -100px;
   bottom: -100px;
   border-radius: 50%;
@@ -721,7 +694,6 @@ border-radius: 30px;
   height: 300px;
   background: linear-gradient(rgb(255, 255, 255), purple);
   animation: rotate 3s linear infinite;
-  /* filter: blur(10px); */
 }
 .backgroud_mesh_00::after {
   content: "";
@@ -732,4 +704,30 @@ border-radius: 30px;
   right: 15px;
   background: black;
   border-radius: 50%;
+}
+/* privacy police */
+.privacy {
+  line-height: 1.5rem;
+  text-align: center;
+  height: auto;
+  padding: 50px;
+  border: 0;
+}
+.privacy .h1font {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  border-top: 1px solid rgb(255, 0, 251);
+
+  height: 50px;
+  color: darkgrey;
+  font-size: large;
 }
