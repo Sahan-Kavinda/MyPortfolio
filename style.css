@@ -441,21 +441,18 @@ footer {
   transform: scale(1.5);
   box-shadow: 6px 6px 8px rgb(255, 0, 191);
   border-radius: 50%;
-  
-  
 }
 .skill_box {
   margin-top: 50px;
- 
- display: flex;
- justify-content: center;
- align-items: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* border: 5px solid white; */
   width: 700px;
   /* height: 695px; */
-  
 }
-.watermark{
+.watermark {
   transform: rotate(-45deg);
   /* transform: translate(50% 50%); */
   /* color:white; */
@@ -465,21 +462,21 @@ footer {
   font-size: 8rem;
   opacity: 0.1;
 }
-.skill_ring{
+.skill_ring {
   position: absolute;
   z-index: -100;
   width: 500px;
   height: 500px;
   /* border: 2px solid white; */
   border-radius: 50%;
-  background: linear-gradient(to right,rgb(255, 0, 204),transparent 95%);
-  animation: ringskill 10s linear infinite ;
+  background: linear-gradient(to right, rgb(255, 0, 204), transparent 95%);
+  animation: ringskill 10s linear infinite;
   opacity: 0.5;
 }
-.skill_ring::before{
+.skill_ring::before {
   position: absolute;
-  content: '';
-   /* width: 500px;
+  content: "";
+  /* width: 500px;
   height: 500px; */
   top: 15px;
   bottom: 15px;
@@ -489,90 +486,88 @@ footer {
   background-color: black;
 }
 @keyframes ringskill {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-.SI_box3{
+.SI_box3 {
   background: url(assets/images/java.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
-.SI_box10{
+.SI_box10 {
   background: url(assets/images/python.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
-.SI_box20{
+.SI_box20 {
   background: url(assets/images/sql.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
-.SI_box23{
+.SI_box23 {
   background: url(assets/images/figma.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
-.SI_box16{
+.SI_box16 {
   background: url(assets/images/css01.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
-.SI_box6{
+.SI_box6 {
   background: url(assets/images/html.png);
   background-size: cover;
-background-position: center;
+  background-position: center;
 }
 
 /* project page css */
-.project_page{
+.project_page {
   position: relative;
 }
-.projectword_box{
+.projectword_box {
   border-radius: 50%;
   height: 550px;
   width: 550px;
-  /* border: 1px solid white; */
+
   position: absolute;
   right: 50px;
   top: 100px;
-display: flex;
- justify-content: center;
- align-items: center;
-   flex-direction: column;
-} 
-.projectword_box p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projectword_box p {
   z-index: 100;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 1.5rem;
 }
-.projectword_box .h1font{
+.projectword_box .h1font {
   margin: 0;
   z-index: 100;
 }
-.projectword_box .p_ring{
-  /* border: 1px solid white; */
+.projectword_box .p_ring {
   width: 500px;
   height: 500px;
   border-radius: 50%;
   position: absolute;
-  background: linear-gradient(to right,rgb(246, 141, 225),transparent 50%);
-  animation: project_ring 3s linear infinite ;
+  background: linear-gradient(to right, rgb(246, 141, 225), transparent 50%);
+  animation: project_ring 3s linear infinite;
 }
-.projectword_box:hover{
+.projectword_box:hover {
   transform: scale(1.1);
   box-shadow: 6px 5px 10px white;
-  /* animation: none; */
 }
 
-.projectword_box .p_ring::before{
-  content: '';
+.projectword_box .p_ring::before {
+  content: "";
   position: absolute;
   top: 10px;
   bottom: 10px;
@@ -580,117 +575,161 @@ display: flex;
   left: 10px;
   background: black;
   border-radius: 50%;
-
 }
 
 @keyframes project_ring {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-.main_project_box{
+.main_project_box {
   margin-top: 40px;
   margin-left: 40px;
   width: 600px;
   height: 600px;
-  /* border: 1px solid white; */
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.project_box{
+.project_box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 5px;
-  /* border: 5px solid red; */
+border-radius: 30px;
   padding: 5px;
 }
-.project_box:hover{
+.project_box:hover {
   transform: scale(1.3);
   cursor: pointer;
-  box-shadow: 3px 3px 6px rgb(255, 255, 255);
-  /* transition: ease-in-out; */
+  box-shadow: 3px 3px 4px rgb(255, 255, 255);
 }
-.pbi{
+.pbi {
   margin: 0;
-border: 1px solid white;
-width: 250px;
-height: 150px;
+  border: 1px solid white;
+  width: 250px;
+  height: 150px;
+  border-radius: 30px;
 }
-.main_project_box p{
+.main_project_box p {
   margin: 0;
 }
 /* contact me page */
-.contactMe{
+
+.contactMe {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
-.contacth1{
- margin-top: 80px;
+.contacth1 {
+  margin-top: 70px;
   /* top: 100px; */
   /* border: 1px solid red; */
   text-align: center;
 }
-.tanks_box{
+.tanks_box {
+  position: absolute;
   font-style: normal;
   /* border: 1px solid red; */
   text-align: center;
   width: 1000px;
   line-height: 1.8rem;
+  /* margin-top: 10px; */
+  top: 170px;
 }
-.contactSocial{
+.tanks_box a{
+  text-decoration: none;
+  color:lightblue;
+}
+.tanks_box a:hover{
+  color:rgb(246, 255, 0);
+  font-size: x-large;
+  /* transform: scale(3); */
+}
+.contactSocial {
+  position: absolute;
+  top: 500px;
   margin-top: 20px;
   /* border: 1px solid red ; */
   display: flex;
   width: 600px;
   height: 80px;
-
 }
-.contactScocialIcon{
+.contactScocialIcon {
   /* border: 1px solid yellow; */
-   width: 100px;
-   margin-left: 10px;
-   margin-right: 10px;
- 
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
-.CS1{
+.contactScocialIcon:hover {
+  box-shadow: 3px 3px 10px white;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.CS1 {
   background: url(assets/images/whatsapp.png);
   background-size: cover;
   background-position: center;
 }
-.CS2{
+.CS2 {
   background: url(assets/images/linkedin.png);
   background-size: cover;
   background-position: center;
 }
-.CS3{
+.CS3 {
   background: url(assets/images/twitter.png);
   background-size: cover;
   background-position: center;
 }
-.CS4{
+.CS4 {
   background: url(assets/images/instagram.png);
   background-size: cover;
   background-position: center;
 }
-.CS5{
+.CS5 {
   background: url(assets/images/facebook.png);
   background-size: cover;
   background-position: center;
 }
-.CS6{
+.CS6 {
   background: url(assets/images/github.png);
   background-size: cover;
   background-position: center;
   background-color: white;
+  border-radius: 50%;
+}
+.backgroud_mesh_00 {
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  /* top:200px; */
+  left: -100px;
+  bottom: -100px;
+  border-radius: 50%;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(rgb(255, 255, 255), purple);
+  animation: rotate 3s linear infinite;
+  /* filter: blur(10px); */
+}
+.backgroud_mesh_00::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background: black;
   border-radius: 50%;
 }
