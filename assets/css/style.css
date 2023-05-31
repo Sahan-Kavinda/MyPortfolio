@@ -1,14 +1,14 @@
 @font-face {
   font-family: josapin;
-  src: url(assets/fonts/JosefinSans-Regular.ttf);
+  src: url(../fonts/JosefinSans-Regular.ttf);
 }
 @font-face {
   font-family: lato;
-  src: url(assets/fonts/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: Lobster;
-  src: url(assets/fonts/Lobster-Regular.ttf);
+  src: url(../fonts/Lobster-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -20,6 +20,7 @@ html {
   margin: 0;
 }
 body {
+  /* max-width: 1440px; */
   background-color: black;
   position: relative;
   overflow-x: hidden;
@@ -181,7 +182,7 @@ nav {
 .H_logo {
   position: absolute;
   z-index: 15;
-  background: url(assets/images/home.jpg);
+  background: url(../images/home.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 100%;
@@ -281,32 +282,32 @@ nav {
 }
 
 .logo1 {
-  background: url(assets/images/social/facebook.png);
+  background: url(../images/social/facebook.png);
   background-size: 40px;
   background-position: center;
 }
 .logo2 {
-  background: url(assets/images/social/instagram.png);
+  background: url(../images/social/instagram.png);
   background-size: 40px;
   background-position: center;
 }
 .logo3 {
-  background: url(assets/images/social/twitter.png);
+  background: url(../images/social/twitter.png);
   background-size: 40px;
   background-position: center;
 }
 .logo4 {
-  background: url(assets/images/social/linkedin.png);
+  background: url(../images/social/linkedin.png);
   background-size: cover;
   background-position: center;
 }
 .logo5 {
-  background: url(assets/images/social/whatsapp.png);
+  background: url(../images/social/whatsapp.png);
   background-size: cover;
   background-position: center;
 }
 .logo6 {
-  background: url(assets/images/social/github.png);
+  background: url(../images/social/github.png);
   background-size: 37px;
   background-position: center;
 }
@@ -374,63 +375,63 @@ nav {
   }
 }
 .box1 {
-  background: url(assets/images/about01.jpg);
+  background: url(../images/about01.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .box2 {
-  background: url(assets/images/about02.jpg);
+  background: url(../images/about02.jpg);
   background-size: cover;
   background-position: center;
 }
 .box3 {
-  background: url(assets/images/about03.jpg);
+  background: url(../images/about03.jpg);
   background-size: cover;
   background-position: center;
 }
 .box4 {
-  background: url(assets/images/about04.jpg);
+  background: url(../images/about04.jpg);
   background-size: cover;
   background-position: center;
 }
 .box5 {
-  background: url(assets/images/about05.jpg);
+  background: url(../images/about05.jpg);
   background-size: cover;
   background-position: center;
 }
 .box6 {
-  background: url(assets/images/about06.jpg);
+  background: url(../images/about06.jpg);
   background-size: cover;
   background-position: center;
 }
 .box7 {
-  background: url(assets/images/about07.jpg);
+  background: url(../images/about07.jpg);
   background-size: cover;
   background-position: center;
 }
 .box8 {
-  background: url(assets/images/about08.jpg);
+  background: url(../images/about08.jpg);
   background-size: cover;
   background-position: center;
 }
 .box9 {
-  background: url(assets/images/about09.jpg);
+  background: url(../images/about09.jpg);
   background-size: cover;
   background-position: center;
 }
 .box10 {
-  background: url(assets/images/about10.jpg);
+  background: url(../images/about10.jpg);
   background-size: cover;
   background-position: center;
 }
 .box11 {
-  background: url(assets/images/about11.jpg);
+  background: url(../images/about11.jpg);
   background-size: cover;
   background-position: center;
 }
 .box12 {
-  background: url(assets/images/about12.jpg);
+  background: url(../images/about12.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -508,32 +509,32 @@ nav {
 }
 
 .SI_box3 {
-  background: url(assets/images/java.png);
+  background: url(../images/java.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box10 {
-  background: url(assets/images/python.png);
+  background: url(../images/python.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box20 {
-  background: url(assets/images/sql.png);
+  background: url(../images/sql.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box23 {
-  background: url(assets/images/figma.png);
+  background: url(../images/figma.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box16 {
-  background: url(assets/images/css01.png);
+  background: url(../images/css01.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box6 {
-  background: url(assets/images/html.png);
+  background: url(../images/html.png);
   background-size: cover;
   background-position: center;
 }
@@ -677,32 +678,32 @@ nav {
   cursor: pointer;
 }
 .CS1 {
-  background: url(assets/images/whatsapp.png);
+  background: url(../images/whatsapp.png);
   background-size: cover;
   background-position: center;
 }
 .CS2 {
-  background: url(assets/images/linkedin.png);
+  background: url(../images/linkedin.png);
   background-size: cover;
   background-position: center;
 }
 .CS3 {
-  background: url(assets/images/twitter.png);
+  background: url(../images/twitter.png);
   background-size: cover;
   background-position: center;
 }
 .CS4 {
-  background: url(assets/images/instagram.png);
+  background: url(../images/instagram.png);
   background-size: cover;
   background-position: center;
 }
 .CS5 {
-  background: url(assets/images/facebook.png);
+  background: url(../images/facebook.png);
   background-size: cover;
   background-position: center;
 }
 .CS6 {
-  background: url(assets/images/github.png);
+  background: url(../images/github.png);
   background-size: cover;
   background-position: center;
   background-color: white;
@@ -750,9 +751,3 @@ footer {
   font-size: large;
 }
 
-/* home page responsive */
-@media screen and (max-width: 1024px) {
-  :root {
-    font-size: 20px;
-  }
-}
