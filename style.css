@@ -10,32 +10,63 @@
   font-family: Lobster;
   src: url(assets/fonts/Lobster-Regular.ttf);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body {
-  box-sizing: border-box;
-  position: relative;
-  background-color: black;
-}
+
 * {
-  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.h1font {
+  /* border: 1px solid red ; */
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 184, 253),
+    rgb(238, 0, 255)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: josapin;
 }
 
 p {
+  line-height: 1.8rem;
   color: #c0c0c0;
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+}
+span{
+  color: rgb(0, 191, 255);
+ 
+}
+span:hover{
+  font-weight: bold;
+ 
 }
 
 section {
-  margin: 0 72px 0 72px;
+  padding: 0 4.5rem;
   position: relative;
   height: 100vh;
-  left: 0px;
   border-radius: 0px;
-  /* width: 1920px; */
-
   border-bottom: 2px solid purple;
+  
 }
+
+/* home page css */
 .homepage {
   top: 0px;
 }
@@ -43,18 +74,24 @@ section {
   z-index: 1000;
   background-color: rgb(0, 0, 0);
   position: fixed;
-  border-bottom: 2px solid purple;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 100vw;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid purple;
+ 
 }
-.brand {
-  margin-left: 72px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sks_a {
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.brand_log {
+  display: grid;
+  place-content: center;
 }
 .sks {
   background: linear-gradient(45deg, rgb(221, 0, 255), white);
@@ -64,22 +101,20 @@ section {
   color: transparent;
   font-family: Lobster, cursive;
 }
+.sks_a:hover {
+  cursor: pointer;
+}
 
 nav {
-  margin-left: 170px;
-}
-.navlink {
-  padding: 0;
-  width: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-right: 5%;
 }
 .navlink li {
+  margin-right: 2.5em;
   display: inline-block;
   list-style: none;
-  color: white;
+  
 }
+
 .navlink li:hover {
   transform: scale(1.1);
   font-weight: bolder;
@@ -91,8 +126,7 @@ nav {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-size: 1.375rem;
-  text-decoration: none;
+  font-size: 1.2rem;
   font-family: josapin;
   color: rgb(251, 0, 255);
 }
@@ -100,7 +134,6 @@ nav {
 .welcomeword p {
   display: flex;
   justify-content: center;
-
   margin: 0.5em;
   font-size: 1em;
   color: white;
@@ -109,20 +142,22 @@ nav {
 .welcomeword {
   position: absolute;
   width: 700px;
-  left: 15px;
-  top: 370px;
+  left: 4.5em;
+  top: 23em;
+  text-align: center;
 }
 .logo_box {
   width: 500px;
   height: 500px;
   position: absolute;
-  right: 2rem;
+  right: 7rem;
   top: 7rem;
   display: grid;
   place-items: center;
 }
 
 .profilelogo_gradient-ring {
+  border: 3px solid white;
   border-radius: 50%;
   width: 500px;
   height: 500px;
@@ -174,7 +209,6 @@ nav {
 
 .head_line_box {
   position: absolute;
-  left: 0;
   top: 150px;
   display: grid;
   grid-template-columns: 21% 79%;
@@ -188,7 +222,6 @@ nav {
   font-family: josapin;
   line-height: 2.5rem;
   color: white;
-
   font-weight: normal;
 }
 .hi_box span {
@@ -203,14 +236,12 @@ nav {
 }
 .move_box > h1 {
   margin-bottom: 0.8rem;
-
   background-image: linear-gradient(
     to right,
     rgb(244, 184, 253),
     rgb(238, 0, 255)
   );
   -webkit-background-clip: text;
-
   background-clip: text;
   color: transparent;
   font-size: 3.5rem;
@@ -223,7 +254,6 @@ nav {
   bottom: 45px;
   justify-content: space-between;
   display: flex;
-
   width: 300px;
   height: 50px;
   align-items: center;
@@ -232,7 +262,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 36px;
   width: 36px;
   border-radius: 100%;
@@ -254,135 +283,111 @@ nav {
 .logo1 {
   background: url(assets/images/social/facebook.png);
   background-size: 40px;
-
   background-position: center;
 }
 .logo2 {
   background: url(assets/images/social/instagram.png);
-
   background-size: 40px;
   background-position: center;
 }
 .logo3 {
   background: url(assets/images/social/twitter.png);
-
   background-size: 40px;
-
   background-position: center;
 }
 .logo4 {
   background: url(assets/images/social/linkedin.png);
-
   background-size: cover;
-
   background-position: center;
 }
 .logo5 {
   background: url(assets/images/social/whatsapp.png);
-
   background-size: cover;
-
   background-position: center;
 }
 .logo6 {
   background: url(assets/images/social/github.png);
-
   background-size: 37px;
-
   background-position: center;
 }
+
 /* about me page css */
 
 .abut {
   display: grid;
-  grid-template-columns: 60% 40%;
-  height: 100vh;
+  justify-content: space-between;
 }
 
 .aboutme {
+  width: 40%;
   position: absolute;
-  top: 80px;
-  right: 0;
-  margin: 0px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 550px;
+  text-align: center;
+  right: 4.5rem;
+  margin-top: 5rem;
 }
 .aboutme h1 {
-  margin: 40px 0 0 0;
+  margin: 2.5rem 0 0 0;
 }
 .about_p {
-  margin: 0px 10px 10px;
+  padding: 1.5rem 3em;
+  text-align: center;
 }
 .about_p > p {
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
   display: flex;
   justify-content: center;
-  font-size: 1em;
-  line-height: 0.8rem;
-  padding: 0;
+  line-height: 1.5rem;
 }
-.aboutimg {
-  height: 600px;
-  padding: 50px;
-}
+
 .fourborder {
   top: 170px;
   left: 200px;
   position: absolute;
-  /* border: 1px solid black; */
+  border: 5px solid rgb(255, 0, 251);
   filter: blur(3px);
- overflow: hidden;
+  overflow: hidden;
   width: 400px;
   height: 400px;
-  padding: 0;
   border-radius: 20px;
-  box-shadow: 4px 6px 15px gray;
-  /* overflow-x: hidden; */
+  box-shadow: 4px 6px 10px rgb(255, 115, 243);
 }
-.fourborder:hover{
-  transform: scale(1.5);
- filter: none;
+.fourborder:hover {
+   border: 1px solid rgb(255, 0, 251);
+  transform: scale(1.3);
+  filter: none;
 }
 .items {
-  padding: 0;
-  opacity: 0.5;
-  /* border-radius: 20px; */
-   display: flex;
+  opacity: 0.8;
+  display: flex;
   width: 100%;
   height: 400px;
-  margin: 0;
-border: 1px solid white;
-animation: items 25s linear infinite alternate;
-  
+  border: 1px solid white;
+  animation: items 30s linear infinite alternate;
 }
 @keyframes items {
-  0%{transform: translateY(10px);}
-  100%{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
     transform: translateY(-4450px);
   }
-  
 }
 .box1 {
   background: url(assets/images/about01.jpg);
   background-size: cover;
   background-position: center;
-  
 }
 
 .box2 {
   background: url(assets/images/about02.jpg);
   background-size: cover;
   background-position: center;
- 
 }
 .box3 {
   background: url(assets/images/about03.jpg);
   background-size: cover;
   background-position: center;
- 
 }
 .box4 {
   background: url(assets/images/about04.jpg);
@@ -430,32 +435,13 @@ animation: items 25s linear infinite alternate;
   background-position: center;
 }
 
-.h1font {
-  background-image: linear-gradient(
-    to right,
-    rgb(244, 184, 253),
-    rgb(238, 0, 255)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 4rem;
-  text-decoration: none;
-  font-family: josapin;
-}
-
 /* skills page css */
 
-.skillpage {
-  position: relative;
-}
-
 .skillparagraph {
-  top: 80px;
-  right: 60px;
-  z-index: 10;
+  margin-top: 8rem;
+  right: 7rem;
+  z-index: -10;
   position: absolute;
-
   padding: 30px 30px 0px;
   text-align: center;
   width: 500px;
@@ -464,17 +450,13 @@ animation: items 25s linear infinite alternate;
   margin: 0;
   text-align: center;
 }
-.skillparagraph > p {
-  line-height: 1.8rem;
-}
+
 .skilltoolgrid {
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   width: 600px;
   height: 600px;
-  margin: 0;
 }
 .hover:hover {
   transform: scale(1.5);
@@ -483,18 +465,15 @@ animation: items 25s linear infinite alternate;
 }
 .skill_box {
   position: absolute;
-  top: 90px;
+  top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 700px;
 }
 .watermark {
   transform: rotate(-45deg);
-
-  position: absolute;
-
+  color: white;
   position: absolute;
   font-size: 8rem;
   opacity: 0.1;
@@ -504,7 +483,6 @@ animation: items 25s linear infinite alternate;
   z-index: -100;
   width: 500px;
   height: 500px;
-
   border-radius: 50%;
   background: linear-gradient(to right, rgb(255, 0, 204), transparent 95%);
   animation: ringskill 10s linear infinite;
@@ -513,7 +491,6 @@ animation: items 25s linear infinite alternate;
 .skill_ring::before {
   position: absolute;
   content: "";
-
   top: 15px;
   bottom: 15px;
   left: 15px;
@@ -569,9 +546,8 @@ animation: items 25s linear infinite alternate;
   border-radius: 50%;
   height: 550px;
   width: 550px;
-
   position: absolute;
-  right: 50px;
+  right: 9rem;
   top: 100px;
   display: flex;
   justify-content: center;
@@ -581,12 +557,10 @@ animation: items 25s linear infinite alternate;
 .projectword_box p {
   z-index: 100;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  line-height: 1.5rem;
+  padding-left: 3.125em;
+  padding-right: 3.125em;
 }
 .projectword_box .h1font {
-  margin: 0;
   z-index: 100;
 }
 .projectword_box .p_ring {
@@ -598,7 +572,7 @@ animation: items 25s linear infinite alternate;
   animation: project_ring 3s linear infinite;
 }
 .projectword_box:hover {
-  transform: scale(1.1);
+  transform: scale(1.09);
   box-shadow: 6px 5px 10px white;
 }
 
@@ -623,13 +597,14 @@ animation: items 25s linear infinite alternate;
 }
 
 .main_project_box {
+  /* border: 2px solid red; */
   position: absolute;
   top: 96px;
   margin-left: 40px;
   width: 600px;
-  height: 600px;
+  height: 450px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .project_box {
@@ -637,25 +612,23 @@ animation: items 25s linear infinite alternate;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px;
   border-radius: 30px;
-  padding: 5px;
+  margin: 0.3125em 0.9375em;
 }
-.project_box:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-  box-shadow: 3px 3px 4px rgb(255, 255, 255);
-}
+
 .pbi {
-  margin: 0;
-  border: 1px solid white;
-  width: 250px;
+  border: 1px solid rgb(255, 0, 221);
+  width: 150px;
   height: 150px;
   border-radius: 30px;
 }
-.main_project_box p {
-  margin: 0;
+
+.pbi:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  box-shadow: 3px 3px 4px rgb(255, 255, 255);
 }
+
 /* contact me page */
 
 .contactMe {
@@ -663,22 +636,17 @@ animation: items 25s linear infinite alternate;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 0;
 }
 .contacth1 {
   margin-top: 70px;
-
   text-align: center;
 }
 .tanks_box {
   position: absolute;
   font-style: normal;
-
   text-align: center;
   width: 1000px;
   line-height: 1.8rem;
-
   top: 170px;
 }
 .tanks_box a {
@@ -693,7 +661,6 @@ animation: items 25s linear infinite alternate;
   position: absolute;
   top: 500px;
   margin-top: 20px;
-
   display: flex;
   width: 600px;
   height: 80px;
@@ -746,7 +713,6 @@ animation: items 25s linear infinite alternate;
   position: absolute;
   z-index: -1;
   opacity: 0.5;
-
   left: -100px;
   bottom: -100px;
   border-radius: 50%;
@@ -767,17 +733,10 @@ animation: items 25s linear infinite alternate;
 }
 /* privacy police */
 .privacy {
-  line-height: 1.5rem;
+  padding: 4.5rem;
   text-align: center;
   height: auto;
-  padding: 50px;
-  border: 0;
-}
-.privacy .h1font {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
+  /* height:1000px; */
 }
 
 footer {
@@ -786,8 +745,14 @@ footer {
   justify-content: center;
   bottom: 0;
   border-top: 1px solid rgb(255, 0, 251);
-
   height: 50px;
   color: darkgrey;
   font-size: large;
+}
+
+/* home page responsive */
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 20px;
+  }
 }
