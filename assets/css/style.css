@@ -436,7 +436,7 @@ nav {
 
 .skillparagraph {
   /* border: 1px solid red; */
-  margin-top:7%;
+  margin-top:10%;
   right: 2%;
   z-index: -10;
   position: absolute;
@@ -452,34 +452,70 @@ nav {
 }
 
 .skilltoolgrid {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   width: 600px;
   height: 600px;
 }
+.skilltoolgrid::before{
+  opacity: 0.8;
+  z-index: -10;
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-image: linear-gradient(to right,
+  deeppink, white);
+  border-radius: 50%;
+  animation-name: skill_rotet;
+  animation-duration:1s;
+  animation-direction:normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+@keyframes skill_rotet {
+  0%{
+    transform: rotate(0deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+.skilltoolgrid::after{
+  z-index: -10;
+  content: '';
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  right: 8%;
+  left: 8%;
+  background-color:black;
+  border-radius: 50%;
+}
 .hover:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   box-shadow: 6px 6px 8px rgb(255, 0, 191);
   border-radius: 50%;
 }
-.skill_box {
-  /* border: 2px solid red; */
-  left: 0;
-  position: absolute;
-  top: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  height: 600px;
-}
+
 .watermark {
   transform: rotate(-45deg);
   color: white;
   position: absolute;
   font-size: 8rem;
   opacity: 0.1;
+  top: 30%;
+  left: 17%;
 }
 .skill_ring {
   position: absolute;
@@ -542,10 +578,9 @@ nav {
 }
 
 /* project page css */
-.project_page {
-  position: relative;
-}
+
 .projectword_box {
+  /* border: 2px solid red;  */
   border-radius: 50%;
   height: 550px;
   width: 550px;
@@ -602,35 +637,31 @@ nav {
 .main_project_box {
   /* border: 2px solid red; */
   position: absolute;
-  top: 96px;
-  margin-left: 40px;
-  width: 600px;
-  height: 450px;
+  top:20%;
+left: 5%;
+  width: 500px;
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .project_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 0.5rem;
   border-radius: 30px;
-  margin: 0.3125em 0.9375em;
+  border: 2px solid rgb(255, 0, 221);
 }
 
-.pbi {
-  border: 1px solid rgb(255, 0, 221);
-  width: 150px;
-  height: 150px;
-  border-radius: 30px;
-}
 
-.pbi:hover {
+.project_box:hover {
+  /* transform: translateX(5rem); */
+  transition:ease;
+  transition: 1s;
+  /* transition: ; */
   transform: scale(1.5);
   cursor: pointer;
-  box-shadow: 3px 3px 4px rgb(255, 255, 255);
+  box-shadow: 3px 3px 6px rgb(255, 255, 255);
 }
+
 
 /* contact me page */
 
@@ -665,18 +696,21 @@ nav {
   top: 500px;
   margin-top: 20px;
   display: flex;
-  width: 600px;
-  height: 80px;
+  width: 340px;
+  height: 40px;
+  justify-content:space-between;
+ 
 }
 .contactScocialIcon {
-  width: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
+   flex-grow: 1;
+  /* border: 2px solid red; */
   border-radius: 50%;
+  margin:0 8px;
 }
 .contactScocialIcon:hover {
   box-shadow: 3px 3px 10px white;
   transform: scale(1.2);
+  transition: 0.3s;
   cursor: pointer;
 }
 .CS1 {
@@ -712,19 +746,19 @@ nav {
   border-radius: 50%;
 }
 .backgroud_mesh_00 {
-  margin: 0;
+ filter: blur(1000px);
   position: absolute;
   z-index: -1;
   opacity: 0.5;
   left: -100px;
   bottom: -100px;
   border-radius: 50%;
-  width: 400px;
-  height: 300px;
-  background: linear-gradient(rgb(255, 255, 255), purple);
-  animation: rotate 3s linear infinite;
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 0, 230));
+  animation: rotate 1s linear infinite;
 }
-.backgroud_mesh_00::after {
+/* .backgroud_mesh_00::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -733,7 +767,7 @@ nav {
   right: 15px;
   background: black;
   border-radius: 50%;
-}
+} */
 /* privacy police */
 .privacy {
   padding: 4.5rem;

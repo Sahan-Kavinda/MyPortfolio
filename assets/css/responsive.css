@@ -9,7 +9,7 @@ section{
 
 @media screen and (max-width: 1024px){
 section{
-  height: 80vh;
+  height: 100vh;
     width: 100%;
     padding: 0 2.5rem;
 }
@@ -63,6 +63,7 @@ line-height: 1.3rem;
 .fourborder{
     width: 300px;
   height: 300px;
+  left: 10%;
 }
 .fourborder:hover{}
 
@@ -79,8 +80,9 @@ line-height: 1.3rem;
   margin-right: 1%;
 }
 
-.skill_box{
-    width: 50%;
+.skilltoolgrid{
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -89,14 +91,31 @@ line-height: 1.3rem;
 }
 
 
+/* project page */
 
+.projectword_box .p_ring{
+  border: 4px solid red ;
+  height: 350px;
+  width: 350px;
+}
+.main_project_box{
+  
+  width: 450px;
+  height: 450px;
 
+}
 
+.projectword_box{
+ height: 350px;
+  width: 350px;
+  top: 25%;
+  right: 8%;
+}
 
-
-
-
-
+/* contact page */
+.contactSocial{
+  width: 500px;
+  height: 50px;}
 
 }
 
