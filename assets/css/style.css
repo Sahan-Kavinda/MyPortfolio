@@ -63,7 +63,7 @@ section {
   position: relative;
   height: 100vh;
   border-radius: 0px;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid rgb(255, 0, 255);
   
 }
 
@@ -453,7 +453,7 @@ nav {
 
 .skilltoolgrid {
   position: absolute;
-  left: 5%;
+  /* left: 40px; */
   top: 10%;
   /* border: 2px solid red; */
   display: grid;
@@ -461,118 +461,133 @@ nav {
   grid-template-rows: repeat(5, 1fr);
   width: 600px;
   height: 600px;
+  transform: translateX(-660px);
+  animation: pop_up 3s ease-in 1s 1  forwards;
 }
-.skilltoolgrid::before{
-  opacity: 0.8;
-  z-index: -10;
-  content: '';
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  right: 5%;
-  bottom: 5%;
-  background-image: linear-gradient(to right,
-  deeppink, white);
-  border-radius: 50%;
-  animation-name: skill_rotet;
-  animation-duration:1s;
-  animation-direction:normal;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-}
-@keyframes skill_rotet {
+@keyframes pop_up {
   0%{
-    transform: rotate(0deg);
+    opacity: 0;
 
   }
+  50%{opacity:0.3px;}
   100%{
-    transform: rotate(360deg);
+    transform: translateX(0.9px);
   }
   
 }
-.skilltoolgrid::after{
-  z-index: -10;
-  content: '';
+
+/* .watermark {
+  z-index: -5;
+  text-align: center;
+  transform: rotate(-25deg);
+  color: rgb(255, 255, 255);
   position: absolute;
-  top: 8%;
-  bottom: 8%;
-  right: 8%;
-  left: 8%;
-  background-color:black;
+  font-size: 6rem;
+  opacity: 0.03;
+  top: 25%;
+  left: 10%;
+  margin:auto;
+  line-height: 6rem;
+} */
+.hover:hover{
+  cursor: pointer;
+  transform:scale(1.2);
+  animation: none;
+  box-shadow:2px 3px 6px gray;
   border-radius: 50%;
-}
-.hover:hover {
-  transform: scale(1.2);
-  box-shadow: 6px 6px 8px rgb(255, 0, 191);
-  border-radius: 50%;
+  
+
 }
 
-.watermark {
-  transform: rotate(-45deg);
-  color: white;
-  position: absolute;
-  font-size: 8rem;
-  opacity: 0.1;
-  top: 30%;
-  left: 17%;
+.SI_icon{
+margin: 5px;
+  /* border: 2px solid rgb(200, 255, 0); */
 }
-.skill_ring {
-  position: absolute;
-  z-index: -100;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgb(255, 0, 204), transparent 95%);
-  animation: ringskill 10s linear infinite;
-  opacity: 0.5;
-}
-.skill_ring::before {
-  position: absolute;
-  content: "";
-  top: 15px;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  border-radius: 50%;
-  background-color: black;
-}
-@keyframes ringskill {
-  0% {
-    transform: rotate(0deg);
+  @keyframes up_down {
+    
+    100%{
+      transform: translateY(-100px);
+    }
   }
-  100% {
-    transform: rotate(360deg);
+   @keyframes down {
+    
+    100%{
+      transform: translateY(100px);
+    }
   }
-}
+  
 
-.SI_box3 {
+.SI_box2 {
+   animation: down 14s linear 0s infinite alternate;
   background: url(../images/java.png);
   background-size: cover;
   background-position: center;
 }
-.SI_box10 {
+.SI_box4 {
+   animation: down 13s linear 5s infinite alternate;
+  background: url(../images/pycharm.png);
+  background-size: cover;
+  background-position: center;
+}
+.SI_box8 {
+   animation: up_down 3s linear 5s infinite alternate;
   background: url(../images/python.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box20 {
+   animation: up_down 4s linear 8s infinite alternate;
   background: url(../images/sql.png);
   background-size: cover;
   background-position: center;
 }
-.SI_box23 {
+.SI_box24 {
+   animation: up_down 5s linear 2s infinite alternate;
   background: url(../images/figma.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box16 {
+   animation: down 6s linear 2s infinite alternate;
   background: url(../images/css01.png);
   background-size: cover;
   background-position: center;
 }
 .SI_box6 {
+   animation: up_down 7s linear 8s infinite alternate;
   background: url(../images/html.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.SI_box22 {
+   animation: up_down 8s linear 2s infinite alternate;
+  background: url(../images/js.png);
+  background-size: cover;
+  background-position: center;
+}
+.SI_box12 {
+   animation: down 9s linear 12s infinite alternate;
+  background: url(../images/nodejs.png);
+  background-size: cover;
+  background-position: center;
+}
+.SI_box14 {
+   animation: up_down 10s linear 2s infinite alternate;
+  background: url(../images/intellij.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.SI_box10 {
+   animation: up_down 11s linear infinite alternate;
+  background: url(../images/vscode.png);
+  background-size: cover;
+  background-position: center;
+}
+.SI_box18 {
+   animation: up_down 12s linear 2s infinite alternate;
+  background: url(../images/webstorm.png);
   background-size: cover;
   background-position: center;
 }
@@ -758,22 +773,13 @@ left: 5%;
   background: linear-gradient(rgb(255, 255, 255), rgb(255, 0, 230));
   animation: rotate 1s linear infinite;
 }
-/* .backgroud_mesh_00::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  background: black;
-  border-radius: 50%;
-} */
+
 /* privacy police */
 .privacy {
   padding: 4.5rem;
   text-align: center;
   height: auto;
-  /* height:1000px; */
+  
 }
 
 footer {
