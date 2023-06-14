@@ -631,7 +631,9 @@ nav {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .anpage {
-  color: white;
+ display:grid;
+ justify-content: center;
+  color:black;
   margin: 0.5rem;
   border-radius: 30px;
   border: 2px solid rgb(255, 0, 221);
@@ -645,31 +647,49 @@ nav {
   box-shadow: 3px 3px 6px rgb(255, 255, 255);
 }
 .main_project_box>a:nth-child(1){
-  background-color: red;
+  background: url(../../assets/assignment_image/case_05.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(2){
-  background-color: rgb(157, 255, 0);
+  background: url(../../assets/assignment_image/case_04.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(3){
-  background-color: rgb(0, 255, 85);
+   background: url(../../assets/assignment_image/case_06.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(4){
-  background-color: rgb(0, 229, 255);
+   background: url(../../assets/assignment_image/case_3.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(5){
-  background-color: rgb(0, 55, 255);
+    background: url(../../assets/assignment_image/case_01.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(6){
-  background-color: rgb(255, 0, 242);
+    background: url(../../assets/assignment_image/case_02.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(7){
-  background-color: rgb(0, 255, 217);
+   background: url(../../assets/assignment_image/calculetor.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(8){
-  background-color: rgb(255, 0, 85);
+   background: url(../../assets/assignment_image/knight.png);
+  background-position: center;
+  background-size: cover;
 }
 .main_project_box>a:nth-child(9){
-  background-color: red;
+   background: url(../../assets/assignment_image/ques.png);
+  background-position: center;
+  background-size: cover;
 }
 
 /* contact me page */
