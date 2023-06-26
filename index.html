@@ -19,7 +19,38 @@
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
+<style>
+    #loader {
+        transition: opacity 1s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: black;
+        z-index: 2;
+    }
+
+    #loader > div {
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: url("assets/images/loder.gif");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
   </head>
+   <div id="loader">
+    <div></div>
+</div>
 
   <body>
     <!-- header section -->
@@ -223,16 +254,14 @@
           class="anpage"
         ></a>
         <a href="Assignment/JS/QUE/que.html" target="_blank" class="anpage"></a>
-      </div>
+      </div>b
       <div class="projectword_box">
-        <div class="p_ring"></div>
+        <div class="inside">
         <h1 class="h1font">Project</h1>
         <p>
-          Here you can explore a collection of my design projects created with
-          Figma, including UI/UX designs, logos, and branding materials. Feel
-          free to take a look and get in touch if you have any questions or
-          comments.
+          Explore my diverse projects and assignments, showcasing my creativity, problem-solving skills, and dedication. Click the icon below to learn more. <br> Thank you for visiting!
         </p>
+        </div>
       </div>
     </section>
     <!-- contact me page -->
@@ -344,5 +373,21 @@
     <footer class="footer">
       <p>Copyright © 2023 SKS One by Sahan Kavinda. All Rights Reserved.</p>
     </footer>
+   
+10:21
+<script src="jquery-3.6.1.min.js"></script>
+
+<script>
+
+    $(window).on('load',function(){
+        $("#loader").fadeOut(300);
+    });
+
+
+    $(document).ready(function (){
+        $("body").prepend();
+    });
+
+</script>
   </body>
 </html>

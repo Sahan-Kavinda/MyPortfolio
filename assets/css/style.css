@@ -20,10 +20,9 @@ html {
   margin: 0;
 }
 body {
-  /* max-width: 1440px; */
-  background-color: black;
+  border: 3px solid red;
+  background-color: rgb(0, 0, 0);
   position: relative;
-  overflow-x: hidden;
 }
 
 .h1font {
@@ -57,10 +56,12 @@ span:hover {
 }
 
 section {
+  width: 100vw;
   padding: 0 4.5rem;
   position: relative;
   height: 100vh;
   border-radius: 0px;
+  /* border: 3px solid yellow; */
   border-bottom: 2px solid rgb(255, 0, 255);
 }
 
@@ -129,7 +130,6 @@ nav {
 
 .welcomeword p {
   margin: 0.5em;
-  /* font-size: 1em; */
   color: white;
 }
 
@@ -306,7 +306,7 @@ nav {
 /* about me page css */
 
 .aboutme {
-  width: 50%;
+  width: 40%;
   position: absolute;
   text-align: center;
   right: 4.5%;
@@ -570,33 +570,22 @@ nav {
   height: 550px;
   width: 550px;
   position: absolute;
-  right: 9rem;
+  right: 4rem;
   top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  
+}
+.projectword_box>.inside{
+    z-index: 10000;
+  border: 3px solid red;
+  width:80%;
+  display:grid;
+  justify-items: center;
+  
 }
 .projectword_box p {
-  z-index: 100;
+  border: 3px solid rgb(179, 255, 0);
   text-align: center;
-  padding-left: 3.125em;
-  padding-right: 3.125em;
-}
-.projectword_box .h1font {
-  z-index: 100;
-}
-.projectword_box .p_ring {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  position: absolute;
-  background: linear-gradient(to right, rgb(246, 141, 225), transparent 50%);
-  animation: project_ring 3s linear infinite;
-}
-.projectword_box:hover {
-  transform: scale(1.09);
-  box-shadow: 6px 5px 10px white;
+
 }
 
 .projectword_box .p_ring::before {
