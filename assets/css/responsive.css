@@ -256,7 +256,9 @@ font-size: 1rem;
   .move_box {
     top: 17%;
   }
- 
+  .move_box > h1 {
+    font-size:2rem;
+  }
   .welcomeword {
     width: 90vw;
     top: 32rem;
@@ -282,87 +284,81 @@ font-size: 1rem;
     top: 12rem;
   }
 
-  /* about page */
-
-  .fourborder {
-    top: 5%;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 250px;
-    height: 250px;
-    filter: none;
-    transform: scale(1);
-  }
-  .fourborder:hover {
-    border: none;
-    transform: scale(1);
-  }
-  .abut {
-    height: 100vh;
-  }
-
-  .aboutme {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 39%;
-    width: 90vw;
-    /* border: 2px solid red; */
-  }
-  .about_p {
-    /* border: 2px solid red; */
-    width: 90vw;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-
-  /* skill page */
-  .skilltoolgrid {
-    top: 8%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 300px;
-    height: 300px;
-  }
-  .skillparagraph {
-    width: 90vw;
-    top: 40%;
-  }
 
   /* project page */
-  .main_project_box {
-    top: 20%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 500px;
-    height: 500px;
-  }
+.main_project_box {
+  
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 340px;
+  height: 630px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
 
   /* contact me page */
 
-  .tanks_box {
-    /* border: 5px solid red; */
-    width: 90vw;
-  }
+  
   .contactSocial {
-    top: 73%;
+    top: 85%;
+  }
+  footer{
+    
+    text-align: center;
   }
 }
 @media screen and (max-width: 375px) {
-  body {
-    background-color: rgb(255, 0, 174);
-  }
+ .homepage{
+  height: 900px;
+ }
+ .welcomeword {
+  position: absolute;
+  width:300px;
+  top: 60%;
+  text-align: center;
+}
+.welcomeword>p {
+ color: rgb(200, 198, 198);
+  
+}
 }
 @media screen and (max-width: 320px) {
-  body {
-    background-color: rgb(0, 255, 34);
+   .move_box > h1 {
+    font-size:1rem;
   }
+ .main_project_box {
+  
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 250px;
+  height: 630px;
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.skilltoolgrid{
+  width: 280px;
+  height: 280px;
+}
+.contacth1{
+  font-size: 2rem;
+  
+}
+.tanks_box{
+  top: 110px;
+}
+.contactSocial{
+  width: 280px;
+  height: 30px;
+}
+.backgroud_mesh{width: 300px;
+  height: 150px;}
+
 }
