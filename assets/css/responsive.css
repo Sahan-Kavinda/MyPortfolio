@@ -7,8 +7,6 @@ section{
 
 @media screen and (max-width: 1024px){
 section{
-  height: 100vh;
-    width: 100%;
     padding: 0 2.5rem;
 }
 .header { 
@@ -97,6 +95,9 @@ line-height: 1.6rem;
 }
 
 @media screen and (max-width: 768px){
+  /* body{
+    overflow: hidden;
+  } */
     nav{
         display: none;
     }
