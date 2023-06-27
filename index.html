@@ -15,6 +15,11 @@
     <meta content="black" name="theme-color" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
     <style>
     #loader {
         transition: opacity 1s;
@@ -24,28 +29,28 @@
         bottom: 0;
         right: 0;
         background: black;
-        z-index: 2;
-         width: 290px;
+        z-index:12000;
+    }
+
+    #loader > div {
+        width: 290px;
         height: 290px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         margin: auto;
         background: url("assets/images/loder.gif");
         background-size: cover;
         background-position: center;
     }
-
-    
 </style>
 
-    <link rel="stylesheet" href="./assets/normalize.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-
-
   </head>
-
+  
    <div id="loader">
-    <!-- <div></div> -->
+    <div></div>
 </div>
 
   <body>
