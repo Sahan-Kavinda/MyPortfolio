@@ -139,7 +139,7 @@ nav {
   /* border: 2px rebeccapurple solid; */
   position: absolute;
   width: 45%;
-  left: 4%;
+  left: 8%;
   top: 50%;
   text-align: center;
 }
@@ -168,6 +168,7 @@ nav {
   top: 7rem;
   background: url(../images/profilee001.png);
  background-size: cover;
+ opacity: 0.7;
  /* background-position: center; */
 }
 /* @keyframes rotate {
@@ -209,14 +210,10 @@ nav {
   filter: blur(150px);
 }
 
-.head_line_box {
-  position: absolute;
-  top: 150px;
-  display: grid;
-  grid-template-columns: 21% 79%;
-  width: 700px;
-}
 .hi_box {
+  position: absolute;
+  top: 20%;
+  /* border: 2px solid red; */
   z-index: 999;
 }
 .hi_box > h2 {
@@ -232,9 +229,10 @@ nav {
   font-size: 2rem;
 }
 .move_box {
+  position: absolute;
+  top:30%;
   z-index: 999;
-  display: flex;
-  align-items: end;
+  /* border: 3px red solid; */
 }
 .move_box > h1 {
   margin-bottom: 0.8rem;
@@ -253,7 +251,7 @@ nav {
 
 .Hsocial {
   bottom: 50px;
-  left: 80px;
+  left: 30%;
   position: absolute;
   display: flex;
   width: 300px;
@@ -454,8 +452,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   transform: translateX(-660px);
   animation: pop_up 3s ease-in 1s 1 forwards;
 }
@@ -675,6 +673,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 .contacth1 {
   margin-top: 70px;
@@ -698,7 +697,7 @@ text-align: center;
 }
 .contactSocial {
   position: absolute;
-  top: 500px;
+  top: 550px;
   margin-top: 20px;
   display: flex;
   width: 340px;
@@ -707,7 +706,6 @@ text-align: center;
 }
 .contactScocialIcon {
   flex-grow: 1;
-  /* border: 2px solid red; */
   border-radius: 50%;
   margin: 0 8px;
 }

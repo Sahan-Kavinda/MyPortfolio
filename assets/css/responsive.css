@@ -1,13 +1,13 @@
 @media screen and (min-width: 1440px){
-section{
-    width:100%;
-   
-}
 }
 
 @media screen and (max-width: 1024px){
 section{
     padding: 0 4rem;
+}
+.move_box{
+  width: 380px;
+  /* font-size: large; */
 }
 .header { 
   height: 40px;
@@ -22,9 +22,6 @@ nav {
 .navlink li a{font-size: 1rem;
 }
 
-p{font-size: 0.9rem;
-line-height: 1.6rem;
-}
 .h1font{font-size: 2.5rem;
 }
 
@@ -39,12 +36,10 @@ line-height: 1.6rem;
   top: 7rem;
 }
 
-.logo_box::before{ width: 350px;
-  height: 350px;}
-
 
 .welcomeword{
    top: 45%;
+   
 }
 .move_box > h1{
   font-size: 2.5rem;
@@ -91,13 +86,22 @@ line-height: 1.6rem;
   top: 25%;
   right: 8%;
 }
+/* contact page */
+ .abut{
+  overflow-y: hidden;
+ }
 
 }
 
 @media screen and (max-width: 768px){
-  /* body{
-    overflow: hidden;
-  } */
+ .abut{
+  overflow-y: hidden;
+ }
+ .skillpage{
+  overflow-y: hidden;
+  
+ }
+
     nav{
         display: none;
     }
@@ -110,20 +114,31 @@ line-height: 1.6rem;
       position: absolute;
       right:8%;
     }
-section{
-  /* height: 100vh; */
-    width: 100%;
-    padding: 5rem;
-}
 
 .Hsocial{
-    bottom: 50px;
-  left:30%;
+    bottom:2%;
+  left:0;
+  right: 0;
+  margin: auto;
 
+}
+.hi_box{
+   top: 10%;
+}
+.move_box{
+  top:17%;
+  
+  
 }
 .welcomeword {
   width:90vw;
-   bottom: 50px;
+   top: 32rem;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+.welcomeword>p{
+  line-height:1.5rem;
 }
 
 .head_line_box{
@@ -132,17 +147,16 @@ section{
 }
 
 .logo_box{
-  /* position: absolute; */
-   width: 250px;
-  height: 250px;
+ 
+   width: 300px;
+  height: 300px;
  left: 0;
  right: 0;
  margin: auto;
-  top: 11rem;
+  top: 12rem;
 }
 
-.logo_box::before{ width: 250px;
-  height: 250px;}
+
 
 
   /* about page */
@@ -194,46 +208,33 @@ section{
   left: 0;
   right: 0;
   margin: auto;
-   width: 400px;
-  height: 400px;
+   width: 300px;
+  height: 300px;
 }
 .skillparagraph {
   width:90vw;
-  top: 50%;
+  top: 40%;
 
 }
 
 /* project page */
 .main_project_box{
-  top: 8%;
+  top: 20%;
   left: 0;
   right: 0;
   margin: auto;
-  width: 350px;
-  height: 350px;
-}
-
-.projectword_box{
-  left: 0;
-  right: 0;
-  margin: auto;
-   top: 50%;
-  width: 550px;
-  
-}
-.projectword_box:hover{
-display: none;
-}
-
-
-.projectword_box .p_ring{
-  display: none;
+  width: 500px;
+  height: 500px;
 }
 
 /* contact me page */
 
 .tanks_box{
+  /* border: 5px solid red; */
   width: 90vw;
+}
+.contactSocial{
+top: 73%;
 }
 
 }
