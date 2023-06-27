@@ -485,64 +485,134 @@
             "inline-block";
         });
 
-      $("#bttn1").click(function () {
-        
+        $(document).ready(function() {
+    // Declare empty arrays
+    let customerData = [];
+    let itemData = [];
 
+    // Event listener for the button with id "bttn1"
+    $("#bttn1").click(function() {
+        // Get input values
         let id = $("#cusIdText").val();
         let name = $("#cusNameText").val();
         let address = $("#cusAddressText").val();
         let mobile = $("#cusMobileText").val();
         let email = $("#cusEmailText").val();
 
-       
-        let tBody = $("#tblCustomer");
+        // Create a customer object
+        let customer = {
+            id: id,
+            name: name,
+            address: address,
+            mobile: mobile,
+            email: email
+        };
 
-     
-        let tr = $("<tr></tr>");
+        // Push the customer object into the customerData array
+        customerData.push(customer);
 
-       
-        let col1 = $("<td></td>").text(id);
-        let col2 = $("<td></td>").text(name);
-        let col3 = $("<td></td>").text(address);
-        let col4 = $("<td></td>").text(mobile);
-        let col5 = $("<td></td>").text(email);
+        // Rest of the code for adding the row to the table
+        // ...
+    });
 
-       
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
-        tr.append(col5);
-
-      
-        tBody.append(tr);
-      });
-
-      $("#saveItem").click(function () {
-        
+    // Event listener for the button with id "saveItem"
+    $("#saveItem").click(function() {
+        // Get input values
         let code = $("#itemCodeText").val();
         let name = $("#itemNameText").val();
         let unitPrice = $("#unitPriceText").val();
         let qty = $("#qtyText").val();
 
-        let tBody = $("#tblItem");
+        // Create an item object
+        let item = {
+            code: code,
+            name: name,
+            unitPrice: unitPrice,
+            qty: qty
+        };
+
+        // Push the item object into the itemData array
+        itemData.push(item);
+
+        // Rest of the code for adding the row to the table
+        // ...
+    });
+
+    // Access the data in the arrays after adding
+    $("#accessDataBtn").click(function() {
+        console.log("Customer Data:", customerData);
+        console.log("Item Data:", itemData);
+    });
+});
+
+let customerOb={
+    id:customerID,
+    name:customer
+}
+
+
+
+
+
+
+    //   $("#bttn1").click(function () {
+        
+
+    //     let id = $("#cusIdText").val();
+    //     let name = $("#cusNameText").val();
+    //     let address = $("#cusAddressText").val();
+    //     let mobile = $("#cusMobileText").val();
+    //     let email = $("#cusEmailText").val();
 
        
-        let tr = $("<tr></tr>");
+    //     let tBody = $("#tblCustomer");
+
+     
+    //     let tr = $("<tr></tr>");
 
        
-        let col1 = $("<td></td>").text(code);
-        let col2 = $("<td></td>").text(name);
-        let col3 = $("<td></td>").text(unitPrice);
-        let col4 = $("<td></td>").text(qty);
+    //     let col1 = $("<td></td>").text(id);
+    //     let col2 = $("<td></td>").text(name);
+    //     let col3 = $("<td></td>").text(address);
+    //     let col4 = $("<td></td>").text(mobile);
+    //     let col5 = $("<td></td>").text(email);
 
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
+       
+    //     tr.append(col1);
+    //     tr.append(col2);
+    //     tr.append(col3);
+    //     tr.append(col4);
+    //     tr.append(col5);
 
-        tBody.append(tr);
-      });
+      
+    //     tBody.append(tr);
+    //   });
+
+    //   $("#saveItem").click(function () {
+        
+    //     let code = $("#itemCodeText").val();
+    //     let name = $("#itemNameText").val();
+    //     let unitPrice = $("#unitPriceText").val();
+    //     let qty = $("#qtyText").val();
+
+    //     let tBody = $("#tblItem");
+
+       
+    //     let tr = $("<tr></tr>");
+
+       
+    //     let col1 = $("<td></td>").text(code);
+    //     let col2 = $("<td></td>").text(name);
+    //     let col3 = $("<td></td>").text(unitPrice);
+    //     let col4 = $("<td></td>").text(qty);
+
+    //     tr.append(col1);
+    //     tr.append(col2);
+    //     tr.append(col3);
+    //     tr.append(col4);
+
+    //     tBody.append(tr);
+    //   });
 
       // document.getElementById("bttn1").addEventListener("click", function () {
       //     let id = document.getElementById("cusIdText").value;

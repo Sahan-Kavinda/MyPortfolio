@@ -647,6 +647,22 @@ text-align: center;
   background-size: cover;
 }
 
+.main_project_box > a:nth-child(10) {
+  background: url(../../assets/assignment_image/ques.png);
+  background-position: center;
+  background-size: cover;
+}
+.main_project_box > a:nth-child(11) {
+  background: url(../../assets/assignment_image/ques.png);
+  background-position: center;
+  background-size: cover;
+}
+.main_project_box > a:nth-child(12) {
+  background: url(../../assets/assignment_image/ques.png);
+  background-position: center;
+  background-size: cover;
+}
+
 /* contact me page */
 
 .contactMe {
