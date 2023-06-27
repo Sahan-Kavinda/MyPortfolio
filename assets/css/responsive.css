@@ -1,409 +1,368 @@
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 }
 
-@media screen and (max-width: 1024px){
-section{
+@media screen and (max-width: 1024px) {
+  section {
     padding: 0 4rem;
-}
-.move_box{
-  width: 380px;
-  /* font-size: large; */
-}
-.header { 
-  height: 40px;
-}
-nav {
-  margin-right: 6%;
-}
-.navlink li {
-  margin-right: 2rem;
-  
-}
-.navlink li a{font-size: 1rem;
-}
+  }
+  .move_box {
+    width: 380px;
+    /* font-size: large; */
+  }
+  .header {
+    height: 40px;
+  }
+  nav {
+    margin-right: 6%;
+  }
+  .navlink li {
+    margin-right: 2rem;
+  }
+  .navlink li a {
+    font-size: 1rem;
+  }
 
-.h1font{font-size: 2.5rem;
-}
+  .h1font {
+    font-size: 2.5rem;
+  }
 
-.Hsocial div div {
-  height: 25px;
-  width: 25px; 
-}
-.logo_box{
-   width: 400px;
-  height: 480px;
-   right: 2rem;
-  top: 7rem;
-}
+  .Hsocial div div {
+    height: 25px;
+    width: 25px;
+  }
+  .logo_box {
+    width: 400px;
+    height: 480px;
+    right: 2rem;
+    top: 7rem;
+  }
 
+  .welcomeword {
+    top: 45%;
+  }
+  .move_box > h1 {
+    font-size: 2.5rem;
+  }
+  /* about me page */
 
-.welcomeword{
-   top: 45%;
-   
-}
-.move_box > h1{
-  font-size: 2.5rem;
-}
-/* about me page */
-
-.fourborder{
+  .fourborder {
     width: 300px;
-  height: 300px;
-  left: 10%;
+    height: 300px;
+    left: 10%;
+  }
+
+  /* skill page */
+
+  .skillparagraph {
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .skilltoolgrid {
+    width: 400px;
+    height: 400px;
+  }
+
+  /* project page */
+
+  .projectword_box .p_ring {
+    /* border: 4px solid red ; */
+    height: 350px;
+    width: 350px;
+  }
+  .main_project_box {
+    width: 450px;
+    height: 450px;
+  }
+
+  .projectword_box {
+    height: 350px;
+    width: 350px;
+    top: 25%;
+    right: 8%;
+  }
+  /* contact page */
 }
 
-/* skill page */
+@media screen and (max-width: 768px) {
 
-.skillparagraph {
- 
-  width: 45%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
+.backgroud_mesh{width: 500px;
+  height: 200px;}
 
-.skilltoolgrid{
-  width: 400px;
-  height: 400px;
-}
+  nav {
+    display: none;
+  }
+  .menu {
+    width: 25px;
+    height: 25px;
+    background: url(../images/menu_button.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 8%;
+  }
 
-/* project page */
+  .Hsocial {
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .hi_box {
+    top: 10%;
+  }
+  .move_box {
+    top: 17%;
+  }
+  .welcomeword {
+    width: 90vw;
+    top: 32rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .welcomeword > p {
+    line-height: 1.5rem;
+  }
 
-.projectword_box .p_ring{
-  /* border: 4px solid red ; */
-  height: 350px;
-  width: 350px;
-}
-.main_project_box{
-  
-  width: 450px;
-  height: 450px;
+  .head_line_box {
+    top: 60px;
+    left: 80px;
+  }
 
-}
-
-.projectword_box{
- height: 350px;
-  width: 350px;
-  top: 25%;
-  right: 8%;
-}
-/* contact page */
- .abut{
-  overflow-y: hidden;
- }
-
-}
-
-@media screen and (max-width: 768px){
- .abut{
-  overflow-y: hidden;
- }
- .skillpage{
-  overflow-y: hidden;
-  
- }
-
-    nav{
-        display: none;
-    }
-    .menu{
-      width: 25px;
-      height: 25px;
-      background: url(../images/menu_button.png);
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      right:8%;
-    }
-
-.Hsocial{
-    bottom:2%;
-  left:0;
-  right: 0;
-  margin: auto;
-
-}
-.hi_box{
-   top: 10%;
-}
-.move_box{
-  top:17%;
-  
-  
-}
-.welcomeword {
-  width:90vw;
-   top: 32rem;
-   left: 0;
-   right: 0;
-   margin: auto;
-}
-.welcomeword>p{
-  line-height:1.5rem;
-}
-
-.head_line_box{
-  top: 60px;
-  left: 80px;
-}
-
-.logo_box{
- 
-   width: 300px;
-  height: 300px;
- left: 0;
- right: 0;
- margin: auto;
-  top: 12rem;
-}
-
-
-
+  .logo_box {
+    width: 300px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 12rem;
+  }
 
   /* about page */
 
-.fourborder {
-  top: 5%;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-   width: 250px;
-  height: 250px;
-   filter:none;
-   transform: scale(1);
-}
-.fourborder:hover {
-  border: none;
-  transform: scale(1);
+  .fourborder {
+    top: 5%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    filter: none;
+    transform: scale(1);
+  }
+  .fourborder:hover {
+    border: none;
+    transform: scale(1);
+  }
+  .abut {
+    height: 100vh;
+  }
 
+  .aboutme {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 39%;
+    width: 90vw;
+  }
+  .about_p {
+    width: 90vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /* skill page */
+  .skilltoolgrid {
+    top: 8%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .skillparagraph {
+    width: 90vw;
+    top: 40%;
+  }
+
+  /* project page */
+  .main_project_box {
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+  }
+
+  /* contact me page */
+
+  .tanks_box {
+    width: 90vw;
+  }
+  .contactSocial {
+    top: 73%;
+  }
 }
+
+@media screen and (max-width: 425px) {
+  nav {
+    display: none;
+  }
+  .homepage{
+    height: 800px;
+  }
 .abut{
-  height:100vh;
+  overflow-y: scroll;
 }
-
-.aboutme{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 39%;
-   width: 90vw;
-   /* border: 2px solid red; */
-   
+.skillpage{
+  overflow-y: scroll;
 }
-.about_p{
-  /* border: 2px solid red; */
-  width: 90vw;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-   
-}
-
-/* skill page */
-.skilltoolgrid{
-  top: 8%;
-  position:absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-   width: 300px;
-  height: 300px;
-}
-.skillparagraph {
-  width:90vw;
-  top: 40%;
-
-}
-
-/* project page */
-.main_project_box{
-  top: 20%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 500px;
-  height: 500px;
-}
-
-/* contact me page */
-
-.tanks_box{
-  /* border: 5px solid red; */
-  width: 90vw;
-}
-.contactSocial{
-top: 73%;
-}
-
-}
+.backgroud_mesh{width: 400px;
+  height: 150px;}
 
 
+  .menu {
+    width: 25px;
+    height: 25px;
+    background: url(../images/menu_button.png);
+    background-size: cover;
+    background-position: center;
+    right: 8%;
+  }
 
-@media screen and (max-width: 425px){
+  .Hsocial {
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .hi_box {
+    top: 8%;
+  }
+  .hi_box > h2 {
+font-size: 1rem;
+  }
+  .hi_box span {
+    font-size: 1.5rem;
+  }
+  .move_box {
+    top: 17%;
+  }
+ 
+  .welcomeword {
+    width: 90vw;
+    top: 32rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .welcomeword > p {
+    line-height: 1.5rem;
+  }
 
-section{
-  height: auto;
-    width: 100%;
-    padding: 5rem;
-}
+  .head_line_box {
+    top: 60px;
+    left: 80px;
+  }
 
-.Hsocial{
-    bottom: 50px;
-  left:30%;
-
-}
-.welcomeword {
-  width:90vw;
-   /* left: 0; */
-    top: 60%;
-}
-
-.head_line_box{
-  top: 60px;
-  left: 80px;
-}
-
-.logo_box{
-  /* position: absolute; */
-   width: 250px;
-  height: 250px;
- left: 0;
- right: 0;
- margin: auto;
-  top: 11rem;
-}
-
-.logo_box::before{ width: 250px;
-  height: 250px;}
-
+  .logo_box {
+    width: 300px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 12rem;
+  }
 
   /* about page */
 
-.fourborder {
-  top: 5%;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-   width: 250px;
-  height: 250px;
-   filter:none;
-   transform: scale(1);
+  .fourborder {
+    top: 5%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    filter: none;
+    transform: scale(1);
+  }
+  .fourborder:hover {
+    border: none;
+    transform: scale(1);
+  }
+  .abut {
+    height: 100vh;
+  }
+
+  .aboutme {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 39%;
+    width: 90vw;
+    /* border: 2px solid red; */
+  }
+  .about_p {
+    /* border: 2px solid red; */
+    width: 90vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /* skill page */
+  .skilltoolgrid {
+    top: 8%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .skillparagraph {
+    width: 90vw;
+    top: 40%;
+  }
+
+  /* project page */
+  .main_project_box {
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+  }
+
+  /* contact me page */
+
+  .tanks_box {
+    /* border: 5px solid red; */
+    width: 90vw;
+  }
+  .contactSocial {
+    top: 73%;
+  }
 }
-.fourborder:hover {
-  border: none;
-  transform: scale(1);
-
+@media screen and (max-width: 375px) {
+  body {
+    background-color: rgb(255, 0, 174);
+  }
 }
-.abut{
-  height:100vh;
-}
-
-.aboutme{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 39%;
-   width: 90vw;
-   /* border: 2px solid red; */
-   
-}
-.about_p{
-  /* border: 2px solid red; */
-  width: 90vw;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-   
-}
-
-/* skill page */
-.skilltoolgrid{
-  top: 8%;
-  position:absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-   width: 400px;
-  height: 400px;
-}
-.skillparagraph {
-  width:90vw;
-  top: 50%;
-
-}
-
-/* project page */
-.main_project_box{
-  top: 8%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 350px;
-  height: 350px;
-}
-
-.projectword_box{
-  left: 0;
-  right: 0;
-  margin: auto;
-   top: 50%;
-  width: 550px;
-  
-}
-.projectword_box:hover{
-display: none;
-}
-
-
-.projectword_box .p_ring{
-  display: none;
-}
-
-/* contact me page */
-
-.tanks_box{
-  width: 90vw;
-}
-
-.footer p{
-font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-@media screen and (max-width: 375px){
-    body{background-color: rgb(255, 0, 174);
-}
-
-}
-@media screen and (max-width: 320px){
-    body{background-color: rgb(0, 255, 34);
-}
-
+@media screen and (max-width: 320px) {
+  body {
+    background-color: rgb(0, 255, 34);
+  }
 }

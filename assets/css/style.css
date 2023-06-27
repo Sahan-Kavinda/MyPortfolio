@@ -167,9 +167,9 @@ nav {
   right: 7rem;
   top: 7rem;
   background: url(../images/profilee001.png);
- background-size: cover;
- opacity: 0.7;
- /* background-position: center; */
+  background-size: cover;
+  opacity: 0.7;
+  /* background-position: center; */
 }
 /* @keyframes rotate {
   0% {
@@ -194,7 +194,7 @@ nav {
 
 .backgroud_mesh {
   position: relative;
-  z-index: -1;
+  z-index: -5;
   opacity: 0.5;
   top: 2rem;
   left: -20rem;
@@ -230,7 +230,7 @@ nav {
 }
 .move_box {
   position: absolute;
-  top:30%;
+  top: 30%;
   z-index: 999;
   /* border: 3px red solid; */
 }
@@ -569,16 +569,15 @@ nav {
 
 /* project page css */
 
-
 #project_h1 {
   /* margin: 0; */
-text-align: center;
+  text-align: center;
 }
 
 .main_project_box {
   /* border: 2px solid red; */
   position: absolute;
-  top:7rem;
+  top: 7rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -673,7 +672,6 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 .contacth1 {
   margin-top: 70px;
