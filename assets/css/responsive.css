@@ -7,7 +7,7 @@ section{
 
 @media screen and (max-width: 1024px){
 section{
-    padding: 0 2.5rem;
+    padding: 0 4rem;
 }
 .header { 
   height: 40px;
@@ -33,9 +33,9 @@ line-height: 1.6rem;
   width: 25px; 
 }
 .logo_box{
-   width: 350px;
-  height: 350px;
-   right: 5rem;
+   width: 400px;
+  height: 480px;
+   right: 2rem;
   top: 7rem;
 }
 

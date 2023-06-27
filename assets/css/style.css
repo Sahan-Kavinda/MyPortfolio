@@ -23,6 +23,7 @@ body {
   /* border: 3px solid red; */
   background-color: rgb(0, 0, 0);
   position: relative;
+  overflow-x: hidden;
 }
 
 .h1font {
@@ -142,7 +143,7 @@ nav {
   top: 50%;
   text-align: center;
 }
-.logo_box::before {
+/* .logo_box::before {
   content: "";
   position: absolute;
   width: 500px;
@@ -154,18 +155,22 @@ nav {
   );
   animation: rotate 4s linear infinite;
   border-radius: 50%;
-  /* filter: blur(5px); */
   opacity: 0.5;
-}
+} */
+
 .logo_box {
-  border-radius: 50%;
+  /* border: 3px solid red; */
+  /* border-radius: 50%; */
   width: 500px;
-  height: 500px;
+  height: 600px;
   position: absolute;
   right: 7rem;
   top: 7rem;
+  background: url(../images/profilee001.png);
+ background-size: cover;
+ /* background-position: center; */
 }
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -180,11 +185,11 @@ nav {
   bottom: 3%;
   left: 3%;
   right: 3%;
-  background: url(../images/home.jpg);
+  background: url(../images/profilee002.png);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-}
+} */
 
 .backgroud_mesh {
   position: relative;
