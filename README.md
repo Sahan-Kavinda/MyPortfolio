@@ -24,7 +24,7 @@
 
 # My Portfoliyo
 
-![Screenshot 2023-06-27 170558]()
+![Screenshot 2023-06-27 170558](assets\images\facebook.png)
 
 ![Screenshot 2023-06-27 170646]()
 
