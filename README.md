@@ -24,18 +24,18 @@
 
 # My Portfoliyo
 
-(https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/about-page.png)
+
 
 ![Screenshot 2023-06-27 170646](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/home_page.png)
 
-![Screenshot 2023-06-27 170713]()
+![Screenshot 2023-06-27 170713](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/about-page.png)
 
-![Screenshot 2023-06-27 170747]()
+![Screenshot 2023-06-27 170747](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/skill-page.png)
 
-![Screenshot 2023-06-27 170808]()
+![Screenshot 2023-06-27 170808](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/project-page.png)
 
-![Screenshot 2023-06-27 170830]()
-
+![Screenshot 2023-06-27 170830](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/contact-page.png)
+![]()
 # Assignments
 
 ![Screenshot 2023-06-27 183419]()
