@@ -36,18 +36,16 @@
 
 ![Screenshot 2023-06-27 170830](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/contact-page.png)
 ![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/privacy-page.png)
-# Assignments
+# Mobile view
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-home-page.png)
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-about-page.png)
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-skill-page.png)
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-project-page.png)
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-contact-page.png)
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/mobile-privacy-page.png)
 
-![Screenshot 2023-06-27 183419]()
 
 
 
-# POS SYSTEM
 
-![Screenshot 2023-06-27 182048]()
 
-![Screenshot 2023-06-27 182108]()
-
-![Screenshot 2023-06-27 182128]()
-
-![Screenshot 2023-06-27 182210]()
