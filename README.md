@@ -35,7 +35,7 @@
 ![Screenshot 2023-06-27 170808](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/project-page.png)
 
 ![Screenshot 2023-06-27 170830](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/contact-page.png)
-![]()
+![](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/privacy-page.png)
 # Assignments
 
 ![Screenshot 2023-06-27 183419]()
