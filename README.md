@@ -24,7 +24,7 @@
 
 # My Portfoliyo
 
-![Screenshot 2023-06-27 170558](assets\images\facebook.png)
+(https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/about-page.png)
 
 ![Screenshot 2023-06-27 170646]()
 
