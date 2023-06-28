@@ -26,7 +26,7 @@
 
 (https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/about-page.png)
 
-![Screenshot 2023-06-27 170646]()
+![Screenshot 2023-06-27 170646](https://github.com/Sahan-Kavinda/MyPortfolio/blob/main/assets/images/web%20image/home_page.png)
 
 ![Screenshot 2023-06-27 170713]()
 
